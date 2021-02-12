@@ -3,20 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+<!--     <meta name="theme-color" content="#000000" /> -->
     <link rel="shortcut icon" href="./assets/img/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="76x76"
       href="./assets/img/apple-icon.png"
     />
-    <link
+<!--     <link
       rel="stylesheet"
       href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
-    />
-    <link
+    /> -->
+<!--     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="./assets/main.css"
     />
     <title>Landing | Tailwind Starter Kit by Creative Tim</title>
   </head>
@@ -103,113 +107,32 @@
       </div>
     </nav>
     <main>
-      <div
-        class="relative pt-16 pb-32 flex content-center items-center justify-center"
-        style="min-height: 75vh;"
-      >
-        <div
-          class="absolute top-0 w-full h-full bg-center bg-cover"
-          style='background-image: url("https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80");'
-        >
-          <span
-            id="blackOverlay"
-            class="w-full h-full absolute opacity-75 bg-black"
-          ></span>
-        </div>
-        <div class="container relative mx-auto">
-          <div class="items-center flex flex-wrap">
+      <!-- Inicio -->
+      <div class="relative pt-16 pb-32 flex content-center items-center justify-center"style="min-height: 100vh;">
+        <div class="container items-center justify-center">
+          <div class="flex flex-wrap items-center">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
-                <h1 class="text-white font-semibold text-5xl">
-                  Your story starts with us.
+                <h1 class="text-black font-semibold text-5xl">
+                  Stop C02
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                  This is a simple example of a Landing Page you can build using
-                  Tailwind Starter Kit. It features multiple CSS components
-                  based on the Tailwindcss design system.
+                  CF Train in VET, es un proyecto de desarrollo 
+                  sostenible de nuestro centro Cuatrovientos, 
+                  donde el objetivo principal es poder conseguir 
+                  ser el primer centro Navarro en emisiones 0, 
+                  para poder concienciar a otros centros.
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-        <div
-          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-          style="height: 70px; transform: translateZ(0px);"
-        >
-          <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              class="text-gray-300 fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
-          </svg>
-        </div>
-      </div>
-      <section class="pb-20 bg-gray-300 -mt-24">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap">
-            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
-                  >
-                    <i class="fas fa-award"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Awarded Agency</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    Divide details about your product or agency work into parts.
-                    A paragraph describing a feature will be enough.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
-                  >
-                    <i class="fas fa-retweet"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Free Revisions</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    Keep you user engaged by providing meaningful information.
-                    Remember that by this time, the user is curious.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="pt-6 w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
-                  >
-                    <i class="fas fa-fingerprint"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Verified Company</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    Write a few lines about each one. A paragraph describing a
-                    feature will be enough. Keep you user engaged!
-                  </p>
-                </div>
-              </div>
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <img src="./assets/img/fotos.png" alt="imágenes de Cuatrovientos">
             </div>
           </div>
+        </div>
+
+
+          <!-- </div>
           <div class="flex flex-wrap items-center mt-32">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
               <div
@@ -273,11 +196,60 @@
                 </blockquote>
               </div>
             </div>
+          </div> -->
+        </div>
+        <div>
+
+        </div>
+
+        <div class=" h-80 w-full" style="background-color: #216869;">
+          
+        </div>
+
+        <!-- timeline -->
+      <section class="relative"> 
+        <div class="container mx-auto w-full h-full">
+          <div class="relative wrap overflow-hidden p-10 h-full">
+            <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+            <!-- right timeline -->
+            <div class="mb-8 flex justify-between items-center w-full right-timeline">
+              <div class="order-1 w-5/12"></div>
+              <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+              </div>
+              <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                <h3 class="mb-3 font-bold text-gray-800 text-xl">Lorem Ipsum</h3>
+                <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+        
+            <!-- left timeline -->
+            <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+              <div class="order-1 w-5/12"></div>
+              <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+              </div>
+              <div class="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                <h3 class="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
+                <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+            
+            <!-- right timeline -->
+            <div class="mb-8 flex justify-between items-center w-full right-timeline">
+              <div class="order-1 w-5/12"></div>
+              <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+              </div>
+              <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                <h3 class="mb-3 font-bold text-gray-800 text-xl">Lorem Ipsum</h3>
+                <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+            </div>
           </div>
         </div>
-      </section>
-      <section class="relative py-20">
-        <div
+<!--         <div
           class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
           style="height: 80px; transform: translateZ(0px);"
         >
@@ -364,8 +336,10 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </div> -->
+
+
+<!--  </section>
       <section class="pt-20 pb-48">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center text-center mb-24">
@@ -517,8 +491,10 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="pb-20 relative block bg-gray-900">
+      </section> -->
+
+      <!-- Socios -->
+      <section class="pb-20 relative block bg-gray-900" style="background-color: #216869;">
         <div
           class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
           style="height: 80px; transform: translateZ(0px);"
@@ -533,8 +509,8 @@
             y="0"
           >
             <polygon
-              class="text-gray-900 fill-current"
-              points="2560 0 2560 100 0 100"
+              class="text-gray-900 "
+              points="2560 0 2560 100 0 100" style="fill: #216869;"
             ></polygon>
           </svg>
         </div>
@@ -593,7 +569,9 @@
           </div>
         </div>
       </section>
-      <section class="relative block py-24 lg:pt-0 bg-gray-900">
+
+      <!-- Contacto -->
+      <section class="relative block py-24 lg:pt-0 bg-gray-900" style="background-color: #216869;">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
             <div class="w-full lg:w-6/12 px-4">
@@ -791,7 +769,7 @@
         >
           <div class="w-full md:w-4/12 px-4 mx-auto text-center">
             <div class="text-sm text-gray-600 font-semibold py-1">
-              Copyright © 2019 Tailwind Starter Kit by
+              Copyright © 2021 CI SCOOP Cuatrovientos
               <a
                 href="https://www.creative-tim.com"
                 class="text-gray-600 hover:text-gray-900"
