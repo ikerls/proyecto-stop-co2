@@ -1,1 +1,25 @@
 /* Añadir todas las etiquetas style de landing html aquí como clases */
+
+html{
+    scroll-behavior: smooth;
+}
+
+h4 :first-child{
+    color: #216869;
+}
+#Inicio a{
+    background-color: #216869;
+    transition: all 0.15s ease 0s;
+}
+.fondoVerde{
+    background-color: #216869;
+}
+.fondoVerde2{
+    background-color: #49a078;
+}
+.tarjeta{
+    background-color: #dce1de;;
+}
+#youtube{
+    padding-top: 56.25%;
+}
