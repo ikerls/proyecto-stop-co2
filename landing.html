@@ -126,14 +126,8 @@
                   poder conseguir ser el primer centro Navarro en emisiones 0,
                   para poder concienciar a otros centros.
                 </p>
-                <a href="#proyecto">
-                  <button
-                      class=" text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                      style="transition: all 0.15s ease 0s; background-color: #216869;"
-                    >
-                      DESCÚBRELO
-                    </button>
+                <a href="#proyecto" class="text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1" style="transition: all 0.15s ease 0s; background-color: #216869;">
+                  DESCÚBRELO
                 </a>
                 
               </div>
@@ -743,7 +737,7 @@
               </p>
             </div>
           </div> -->
-        </div>
+        <!-- </div> -->
       </section>
 
       <!-- Contacto -->
@@ -752,64 +746,44 @@
         style="background-color: #216869"
       >
         <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-            <div class="w-full lg:w-6/12 px-4">
-              <div
-                class=" flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white"
-              >
-                <div class="flex-auto p-5 lg:p-10">
-                  <h4 class="text-2xl font-semibold">Want to work with us?</h4>
-                  <p class="leading-relaxed mt-1 mb-4 text-gray-600">
-                    Complete this form and we will get back to you in 24 hours.
-                  </p>
-                  <div class="relative w-full mb-3 mt-8">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="full-name"
-                      >Full Name</label
-                    ><input
-                      type="text"
-                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Full Name"
-                      style="transition: all 0.15s ease 0s"
-                    />
-                  </div>
-                  <div class="relative w-full mb-3">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="email"
-                      >Email</label
-                    ><input
-                      type="email"
-                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Email"
-                      style="transition: all 0.15s ease 0s"
-                    />
-                  </div>
-                  <div class="relative w-full mb-3">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="message"
-                      >Message</label
-                    ><textarea
-                      rows="4"
-                      cols="80"
-                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Type a message..."
-                    ></textarea>
-                  </div>
-                  <div class="text-center mt-6">
-                    <button
-                      class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                      style="transition: all 0.15s ease 0s"
-                    >
-                      Send Message
-                    </button>
-                  </div>
+          <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48 ">
+            <form class="w-full max-w-lg bg-white p-16 rounded-lg">
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="nick">
+                    Nickname
+                  </label>
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="nick" type="text">
+                  
                 </div>
               </div>
-            </div>
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+                    E-mail
+                  </label>
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email">
+                  
+                </div>
+              </div>
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
+                    Message
+                  </label>
+                  <textarea class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message"></textarea>
+                  
+                </div>
+              </div>
+              <div class="md:flex md:items-center">
+                <div class="md:w-1/3">
+                  <button class="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                    Send
+                  </button>
+                </div>
+                <div class="md:w-2/3"></div>
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -819,13 +793,13 @@
         class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
         style="height: 80px; transform: translateZ(0px)"
       >
-        </svg>
+        <!-- </svg> -->
       </div>
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap">
           <div class="w-full lg:w-6/12 px-4">
             <img src="./assets/img/cuatrovientos/cuatrovientos.png" alt="cuatrovintos logo">
-            <img src="./assets/img/cuatrovientos/Recurso 5.png" alt="stopco2 logo" class="w-28">
+            <img src="./assets/img/cuatrovientos/Recurso-5.png" alt="stopco2 logo" class="w-28">
             <div class="mt-6">
               <button
                 class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
@@ -945,10 +919,10 @@
       </div>
     </footer>
   </body>
-  <script>
+  <!-- <script>
     function toggleNavbar(collapseID) {
       document.getElementById(collapseID).classList.toggle("hidden");
       document.getElementById(collapseID).classList.toggle("block");
     }
-  </script>
+  </script> -->
 </html>
