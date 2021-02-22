@@ -35,4 +35,7 @@ h4 :first-child {
 #youtube {
   padding-top: 56.25%;
 }
+.seleccionado{
+   border-bottom: 10px, solid, #216869 !important;  
+}
 
