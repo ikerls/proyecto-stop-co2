@@ -1,0 +1,38 @@
+/* Añadir todas las etiquetas style de landing html aquí como clases */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+p {
+  font-family: "Nunito", sans-serif;
+}
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+
+h4 :first-child {
+  color: #216869;
+}
+#Inicio a {
+  background-color: #216869;
+  transition: all 0.15s ease 0s;
+}
+.fondoVerde {
+  background-color: #216869;
+}
+.fondoVerde2 {
+  background-color: #49a078;
+}
+.tarjeta {
+  background-color: #dce1de;
+}
+#youtube {
+  padding-top: 56.25%;
+}
+
