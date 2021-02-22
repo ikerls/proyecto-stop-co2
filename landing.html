@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="./assets/img/favicon.ico" />
     <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./assets/img/apple-icon.png"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
@@ -19,22 +14,96 @@
 
     <title>Stop CO2 | CF Train in VET</title>
   </head>
-  <body class="text-gray-800 antialiased">
+  <body class="antialiased text-gray-800">
     <main>
+
+      <nav class="fondoVerde relative">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 
+              focus:ring-inset focus:ring-white" aria-expanded="false" id="boton">
+                <span class="sr-only">Open main menu</span>
+                <!-- Icon when menu is closed. -->
+                <!--
+                  Heroicon name: outline/menu
+  
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!-- Icon when menu is open. -->
+                <!--
+                  Heroicon name: outline/x
+  
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex-shrink-0 flex items-center">
+                <img class="block lg:hidden h-8 w-auto" src="./assets/img/cuatrovientos/Recurso-5.png" alt="Workflow">
+                <img class="hidden lg:block h-9 w-auto" src="./assets/img/cuatrovientos/Recurso-5.png"  alt="Workflow">
+              </div>
+              <div class="hidden sm:block sm:ml-6" >
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="fondoVerde2 text-white px-3 py-2 rounded-md text-sm font-medium">Prueba</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Prueba1</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Prueba2</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Prueba3</a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div class="ml-3 relative">
+                <div>
+                  <button class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu" aria-haspopup="true">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-10 w-10 rounded-full" src="./assets/img/cuatrovientos/logo.png" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!--
+          Mobile menu, toggle classes based on menu state.
+  
+          Menu open: "block", Menu closed: "hidden"
+        -->
+        <div class="hidden sm:hidden" id="menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Prueba</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Prueba1</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Prueba2</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Prueba3</a>
+          </div>
+        </div>
+      </nav>
+
+
       <!-- Inicio -->
       <section
         id="Inicio"
-        class="relative h-auto pt-0 pb-0 md:pt-16 md:pb-32 flex content-center items-center justify-center sm:h-screen"
+        class="relative flex items-center content-center justify-center h-auto pt-0 pb-0 md:pt-16 md:pb-32 lg:h-screen lg:min-h-full"
       >
         <div class="container items-center justify-center">
           <div class="flex flex-wrap items-center">
-            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-left">
-              <div class="pr-12 pb-20">
-                <h4 class="font-semibold pt-20">
+            <div class="w-full px-4 ml-auto mr-auto text-left lg:w-6/12">
+              <div class="pb-20 pr-12">
+                <h4 class="pt-20 font-semibold">
                   <span>CUATROVIENTOS</span> PRESENTA,
                 </h4>
-                <h1 class="text-black font-semibold text-6xl lef">Stop C02</h1>
-                <p class="mt-4 text-lg text-gray-300 pb-5">
+                <h1 class="text-6xl font-semibold text-black lef">Stop CO2</h1>
+                <p class="pb-5 mt-4 text-lg text-gray-300">
                   CF Train in VET, es un proyecto de desarrollo sostenible de
                   nuestro centro Cuatrovientos, donde el objetivo principal es
                   poder conseguir ser el primer centro Navarro en emisiones 0,
@@ -42,63 +111,98 @@
                 </p>
                 <a
                   href="#Resumen"
-                  class="text-white text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none"
+                  class="px-6 py-3 text-sm font-bold text-white uppercase rounded shadow outline-none hover:shadow-lg"
                 >
                   DESCÚBRELO
                 </a>
               </div>
             </div>
-            <div class="object-fill lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="px-4 ml-auto mr-auto text-center lg:max-w-lg lg:">
               <img
                 src="./assets/img/fotos.png"
                 alt="imágenes de Cuatrovientos"
+                class="object-fill"
               />
             </div>
           </div>
         </div>
       </section>
-      <section id="Resumen">
+
+      <!-- <section class="content-center h-screen bg-coolGray-100 text-coolGray-800">
         <div
-          class="h-auto w-full text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8 fondoVerde"
+          class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between"
         >
-          <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-            <span class="block">STOP CO2</span>
-            <span class="block">CFTrain in VET</span>
-          </h2>
-          <p class="mt-4 text-lg leading-6 text-white">
-            Es un proyecto internacional sobre sostenibilidad y cambio climático
-            basado en el concepto del cálculo y la reducción de la Huella de
-            Carbono. Acorde a nuestros valores y responsabilidades social y
-            medioambiental queremos formar a futuros profesionales responsables
-            y comprometidos con el medioambiente.
-          </p>
-          <h2 class="text-3xl sm:text-4xl text-center text-white mt-10">
-            <span class="block">Descubre</span>
-            <span class="block">las fases del proyecto.</span>
-          </h2>
+          <div
+            class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left"
+          >
+            <h1 class="text-5xl font-bold leading-none sm:text-6xl">
+              Ac mattis <span class="text-emerald-600">senectus</span>erat
+              pharetra
+            </h1>
+            <p class="mt-6 mb-8 text-lg sm:mb-12">
+              Dictum aliquam porta in condimentum ac integer
+              <br class="hidden md:inline lg:hidden" />turpis pulvinar, est
+              scelerisque ligula sem
+            </p>
+          </div>
+          <div
+            class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+          >
+            <img
+              src="./assets/img/fotos.png"
+              alt=""
+              class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+            />
+          </div>
+        </div>
+      </section> -->
+
+      <section class="items-center h-auto fondoVerde" id="Resumen">
+        <div
+          class="container justify-center px-4 py-16 mx-auto sm:py-20 sm:px-6 lg:px-8"
+        >
+          <div class="text-center">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+              <span class="block">STOP CO2</span>
+              <span class="block">CFTrain in VET</span>
+            </h2>
+            <p class="mt-4 text-lg leading-6 text-white">
+              Es un proyecto internacional sobre sostenibilidad y cambio
+              climático basado en el concepto del cálculo y la reducción de la
+              Huella de Carbono. Acorde a nuestros valores y responsabilidades
+              social y medioambiental queremos formar a futuros profesionales
+              responsables y comprometidos con el medioambiente.
+            </p>
+            <h2 class="mt-10 text-3xl text-center text-white sm:text-4xl">
+              <span class="block">Descubre</span>
+              <span class="block">las fases del proyecto.</span>
+            </h2>
+          </div>
         </div>
       </section>
+
+      
       <!-- timeline -->
       <div class="container mx-auto">
-        <div class="flex flex-col md:grid grid-cols-9 mx-auto">
+        <div class="flex flex-col grid-cols-9 mx-auto md:grid">
           <!-- left -->
           <div class="flex flex-row-reverse md:contents">
-            <div class="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto">
-              <div class="max-w-sm rounded overflow-hidden shadow-lg tarjeta">
+            <div class="col-start-1 col-end-5 p-4 my-4 ml-auto rounded-xl">
+              <div class="max-w-sm overflow-hidden rounded shadow-lg tarjeta">
                 <a href="https://google.es" target="_blank">
-                  <div class="h-80 bg-cover bg-center">
+                  <div class="bg-center bg-cover h-80">
                     <img
                       src="./assets/img/prepa.jpg"
                       alt="preparacion"
-                      class="h-80 w-full"
+                      class="w-full h-80"
                     />
                   </div>
 
                   <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
+                    <div class="mb-2 text-xl font-bold">
                       Fase de preparación
                     </div>
-                    <p class="text-gray-700 text-base">
+                    <p class="text-base text-gray-700">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Voluptatibus quia, nulla! Maiores et perferendis eaque,
                       exercitationem praesentium nihil.
@@ -107,39 +211,39 @@
                 </a>
               </div>
             </div>
-            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-              <div class="h-full w-6 flex items-center justify-center">
-                <div class="h-full w-1 pointer-events-none fondoVerde"></div>
+            <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
+              <div class="flex items-center justify-center w-6 h-full">
+                <div class="w-1 h-full pointer-events-none fondoVerde"></div>
               </div>
               <div
-                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full shadow fondoVerde2"
+                class="absolute w-6 h-6 -mt-3 rounded-full shadow top-1/2 fondoVerde2"
               ></div>
             </div>
           </div>
           <!-- right -->
           <div class="flex md:contents">
-            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-              <div class="h-full w-6 flex items-center justify-center">
-                <div class="h-full w-1 pointer-events-none fondoVerde"></div>
+            <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
+              <div class="flex items-center justify-center w-6 h-full">
+                <div class="w-1 h-full pointer-events-none fondoVerde"></div>
               </div>
               <div
-                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full shadow fondoVerde2"
+                class="absolute w-6 h-6 -mt-3 rounded-full shadow top-1/2 fondoVerde2"
               ></div>
             </div>
-            <div class="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto">
-              <div class="max-w-sm rounded overflow-hidden shadow-lg tarjeta">
-                <div class="h-80 bg-cover">
+            <div class="col-start-6 col-end-10 p-4 my-4 mr-auto rounded-xl">
+              <div class="max-w-sm overflow-hidden rounded shadow-lg tarjeta">
+                <div class="bg-cover h-80">
                   <img
                     src="./assets/img/cuatrovientos1.jpg"
                     alt="Actividades"
-                    class="object-cover h-80 w-full"
+                    class="object-cover w-full h-80"
                   />
                 </div>
                 <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">
+                  <div class="mb-2 text-xl font-bold">
                     Desarrollo de Actividades
                   </div>
-                  <p class="text-gray-700 text-base">
+                  <p class="text-base text-gray-700">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Voluptatibus quia, nulla! Maiores et perferendis eaque,
                     exercitationem praesentium nihil.
@@ -150,20 +254,20 @@
           </div>
           <!-- left -->
           <div class="flex flex-row-reverse md:contents">
-            <div class="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto">
-              <div class="max-w-sm rounded overflow-hidden shadow-lg tarjeta">
-                <div class="h-80 bg-cover">
+            <div class="col-start-1 col-end-5 p-4 my-4 ml-auto rounded-xl">
+              <div class="max-w-sm overflow-hidden rounded shadow-lg tarjeta">
+                <div class="bg-cover h-80">
                   <img
                     src="./assets/img/procud.jpg"
                     alt="Actividades"
-                    class="object-cover h-80 w-full"
+                    class="object-cover w-full h-80"
                   />
                 </div>
                 <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">
+                  <div class="mb-2 text-xl font-bold">
                     Resultados de las Actividades
                   </div>
-                  <p class="text-gray-700 text-base">
+                  <p class="text-base text-gray-700">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Voluptatibus quia, nulla! Maiores et perferendis eaque,
                     exercitationem praesentium nihil.
@@ -171,12 +275,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-              <div class="h-full w-6 flex items-center justify-center">
-                <div class="h-full w-1 pointer-events-none fondoVerde"></div>
+            <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
+              <div class="flex items-center justify-center w-6 h-full">
+                <div class="w-1 h-full pointer-events-none fondoVerde"></div>
               </div>
               <div
-                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full shadow fondoVerde2"
+                class="absolute w-6 h-6 -mt-3 rounded-full shadow top-1/2 fondoVerde2"
               ></div>
             </div>
           </div>
@@ -184,12 +288,12 @@
       </div>
       <!-- Socios -->
       <!-- relative -->
-      <section class="pb-20 block fondoVerde">
-        <div class="container pb-24 mx-auto px-4 lg:pt-24 lg:pb-64">
-          <div class="flex flex-wrap text-center justify-center">
-            <div class="w-full lg:w-6/12 px-4">
+      <section class="block pb-20 fondoVerde">
+        <div class="container px-4 pb-24 mx-auto lg:pt-24 lg:pb-64">
+          <div class="flex flex-wrap justify-center text-center">
+            <div class="w-full px-4 lg:w-6/12">
               <h2 class="text-4xl font-semibold text-white">Nuestros Socios</h2>
-              <p class="text-lg leading-relaxed mt-4 mb-4">
+              <p class="mt-4 mb-4 text-lg leading-relaxed">
                 Put the potentially record low maximum sea ice extent tihs year
                 down to low ice. According to the National Oceanic and
                 Atmospheric Administration, Ted, Scambos.
@@ -201,17 +305,17 @@
               width="560"
               height="315"
               src="https://www.youtube.com/embed/ESNEuouXljQ"
-              frameborder="0"
+              
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
               class="absolute inset-0 w-full h-full"
             ></iframe>
           </div>
-          <div class="shadow-lg rounded-lg bg-white mt-11">
-            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+          <div class="bg-white rounded-lg shadow-lg mt-11">
+            <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                 <div
-                  class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
+                  class="flex justify-center col-span-1 md:col-span-2 lg:col-span-1"
                 >
                   <img
                     class="h-12"
@@ -220,7 +324,7 @@
                   />
                 </div>
                 <div
-                  class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
+                  class="flex justify-center col-span-1 md:col-span-2 lg:col-span-1"
                 >
                   <img
                     class="h-12"
@@ -229,7 +333,7 @@
                   />
                 </div>
                 <div
-                  class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
+                  class="flex justify-center col-span-1 md:col-span-2 lg:col-span-1"
                 >
                   <img
                     class="h-12"
@@ -238,7 +342,7 @@
                   />
                 </div>
                 <div
-                  class="col-span-1 flex justify-center md:col-span-3 lg:col-span-1"
+                  class="flex justify-center col-span-1 md:col-span-3 lg:col-span-1"
                 >
                   <img
                     class="h-12"
@@ -247,7 +351,7 @@
                   />
                 </div>
                 <div
-                  class="col-span-2 flex justify-center md:col-span-3 lg:col-span-1"
+                  class="flex justify-center col-span-2 md:col-span-3 lg:col-span-1"
                 >
                   <img
                     class="h-12"
@@ -262,57 +366,57 @@
       </section>
       <!-- Contacto -->
       <section class="block py-24 lg:pt-0 fondoVerde">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+        <div class="container px-4 mx-auto">
+          <div class="flex flex-wrap justify-center -mt-48 lg:-mt-64">
             <form
-              class="w-full max-w-lg bg-white p-16 rounded-lg"
+              class="w-full max-w-lg p-16 bg-white rounded-lg"
               action="mailto:info@cuatrovientos.org"
             >
-              <h2 class="font-semibold text-3xl pb-11">
+              <h2 class="text-3xl font-semibold pb-11">
                 Contacta con nosotros
               </h2>
-              <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="flex flex-wrap mb-6 -mx-3">
                 <div class="w-full px-3">
                   <label
-                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
                     for="nick"
                   >
                     Nombre
                   </label>
                   <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500"
                     id="nick"
                     type="text"
                     required
                   />
                 </div>
               </div>
-              <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="flex flex-wrap mb-6 -mx-3">
                 <div class="w-full px-3">
                   <label
-                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
                     for="email"
                   >
                     E-mail
                   </label>
                   <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500"
                     id="email"
                     type="email"
                     required
                   />
                 </div>
               </div>
-              <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="flex flex-wrap mb-6 -mx-3">
                 <div class="w-full px-3">
                   <label
-                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
                     for="message"
                   >
                     Mensaje
                   </label>
                   <textarea
-                    class="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                    class="block w-full h-48 px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none resize-none no-resize focus:outline-none focus:bg-white focus:border-gray-500"
                     id="message"
                     required
                   ></textarea>
@@ -321,7 +425,7 @@
               <div class="md:flex md:items-center">
                 <div class="md:w-1/3">
                   <button
-                    class="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded fondoVerde"
+                    class="px-4 py-2 font-bold text-white bg-teal-400 rounded shadow hover:bg-teal-400 focus:shadow-outline focus:outline-none fondoVerde"
                     type="submit"
                   >
                     Enviar
@@ -334,10 +438,10 @@
         </div>
       </section>
     </main>
-    <footer class="relative bg-gray-300 pt-8 pb-6">
-      <div class="container mx-auto px-4">
+    <footer class="relative pt-8 pb-6 bg-gray-300">
+      <div class="container px-4 mx-auto">
         <div class="flex flex-wrap">
-          <div class="w-full lg:w-6/12 px-4">
+          <div class="w-full px-4 lg:w-6/12">
             <img
               src="./assets/img/cuatrovientos/cuatrovientos.png"
               alt="cuatrovintos logo"
@@ -349,96 +453,96 @@
             />
             <div class="mt-6">
               <button
-                class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                class="items-center justify-center w-10 h-10 p-3 mr-2 font-normal text-blue-400 bg-white rounded-full shadow-lg outline-none align-center focus:outline-none"
                 type="button"
               >
                 <i class="fab fa-instagram"></i></button
               ><button
-                class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                class="items-center justify-center w-10 h-10 p-3 mr-2 font-normal text-blue-600 bg-white rounded-full shadow-lg outline-none align-center focus:outline-none"
                 type="button"
               >
                 <i class="flex fab fa-facebook-square"></i></button
               ><button
-                class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                class="items-center justify-center w-10 h-10 p-3 mr-2 font-normal text-pink-400 bg-white rounded-full shadow-lg outline-none align-center focus:outline-none"
                 type="button"
               >
                 <i class="flex fab fa-dribbble"></i></button
               ><button
-                class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                class="items-center justify-center w-10 h-10 p-3 mr-2 font-normal text-gray-900 bg-white rounded-full shadow-lg outline-none align-center focus:outline-none"
                 type="button"
               >
                 <i class="flex fab fa-github"></i>
               </button>
             </div>
           </div>
-          <div class="w-full lg:w-6/12 px-4">
-            <div class="flex flex-wrap items-top mb-6">
-              <div class="w-full lg:w-4/12 px-4 ml-auto">
+          <div class="w-full px-4 lg:w-6/12">
+            <div class="flex flex-wrap mb-6 items-top">
+              <div class="w-full px-4 ml-auto lg:w-4/12">
                 <span
-                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  class="block mb-2 text-sm font-semibold text-gray-600 uppercase"
                   >Useful Links</span
                 >
                 <ul class="list-unstyled">
                   <li>
                     <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                       href="https://www.creative-tim.com/presentation"
                       >About Us</a
                     >
                   </li>
                   <li>
                     <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                       href="https://blog.creative-tim.com"
                       >Blog</a
                     >
                   </li>
                   <li>
                     <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                       href="https://www.github.com/creativetimofficial"
                       >Github</a
                     >
                   </li>
                   <li>
                     <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                       href="https://www.creative-tim.com/bootstrap-themes/free"
                       >Free Products</a
                     >
                   </li>
                 </ul>
               </div>
-              <div class="w-full lg:w-4/12 px-4">
+              <div class="w-full px-4 lg:w-4/12">
                 <span
-                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  class="block mb-2 text-sm font-semibold text-gray-600 uppercase"
                   >Other Resources</span
                 >
                 <ul class="list-unstyled">
                   <li>
                     <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                       href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
                       >MIT License</a
                     >
                   </li>
                   <li>
                     <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                       href="https://creative-tim.com/terms"
                       >Terms &amp; Conditions</a
                     >
                   </li>
                   <li>
                     <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                       href="https://creative-tim.com/privacy"
                       >Privacy Policy</a
                     >
                   </li>
                   <li>
                     <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                       href="https://creative-tim.com/contact-us"
                       >Contact Us</a
                     >
@@ -450,10 +554,10 @@
         </div>
         <hr class="my-6 border-gray-400" />
         <div
-          class="flex flex-wrap items-center md:justify-between justify-center"
+          class="flex flex-wrap items-center justify-center md:justify-between"
         >
-          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div class="text-sm text-gray-600 font-semibold py-1">
+          <div class="w-full px-4 mx-auto text-center md:w-4/12">
+            <div class="py-1 text-sm font-semibold text-gray-600">
               Copyright © 2021 CI SCOOP Cuatrovientos
               <a
                 href="https://www.creative-tim.com"
