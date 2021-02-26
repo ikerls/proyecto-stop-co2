@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop CO2 | CF Train in VET</title>
+    <link rel="stylesheet" href="../assets/main.css" />
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="fondoVerde">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 
+            focus:ring-inset focus:ring-white" aria-expanded="false" id="boton">
+              <span class="sr-only">Open main menu</span>
+              <!-- Icon when menu is closed. -->
+              <!--
+                Heroicon name: outline/menu
+
+                Menu open: "hidden", Menu closed: "block"
+              -->
+              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <!-- Icon when menu is open. -->
+              <!--
+                Heroicon name: outline/x
+
+                Menu open: "block", Menu closed: "hidden"
+              -->
+              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex-shrink-0 flex items-center">
+              <img class="block lg:hidden h-8 w-auto" src="./assets/img/cuatrovientos/Recurso-5.png" alt="Workflow">
+              <img class="hidden lg:block h-9 w-auto" src="./assets/img/cuatrovientos/Recurso-5.png"  alt="Workflow">
+            </div>
+            <div class="hidden sm:block sm:ml-6" >
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="fondoVerde2 text-white px-3 py-2 rounded-md text-sm font-medium">Prueba</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Prueba1</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Prueba2</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Prueba3</a>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <div class="ml-3 relative">
+              <div>
+                <button class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu" aria-haspopup="true">
+                  <span class="sr-only">Open user menu</span>
+                  <img class="h-10 w-10 rounded-full" src="./assets/img/cuatrovientos/logo.png" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        Mobile menu, toggle classes based on menu state.
+
+        Menu open: "block", Menu closed: "hidden"
+      -->
+      <div class="hidden sm:hidden" id="menu">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Prueba</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Prueba1</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Prueba2</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Prueba3</a>
+        </div>
+      </div>
+    </nav>
+    <section class="py-12 overflow-hidden md:py-20 lg:py-24">
+      <div
+        class="container mx-auto bg-fixed rounded-lg shadow-lg pt-11 pb-11"
+        style="background-image: url(../assets/img/cuatrovientos/bosquew.jpg)"
+      >
+        <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div class="relative">
+            <img
+              class="h-20 mx-auto"
+              src="../assets/img/cuatrovientos/Recurso 1.svg"
+              alt="Workcation"
+            />
+            <blockquote class="mt-10">
+              <div
+                class="max-w-3xl mx-auto text-2xl font-medium leading-9 text-center text-gray-900 "
+              >
+                <p>
+                  “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  expedita voluptas culpa sapiente alias molestiae. Numquam
+                  corrupti in laborum sed rerum et corporis.”
+                </p>
+              </div>
+              <footer class="mt-8"></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- seccion de preparacion / contexto -->
+    <section>
+      <div class="py-16 overflow-hidden">
+        <div class="px-4 mx-auto space-y-8 max-w-7xl sm:px-6 lg:px-8">
+          <div class="mx-auto text-base max-w-prose lg:max-w-none">
+            <h2
+              class="text-lg text-base font-semibold tracking-wide text-indigo-600 uppercase"
+            >
+              CF Train in VET 
+            </h2>
+            <!-- <p
+              class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl"
+            >
+              What makes us different
+            </p> -->
+          </div>
+          <div
+            class="relative z-10 mx-auto text-base max-w-prose lg:max-w-5xl lg:mx-0 lg:pr-72"
+          >
+            <p class="text-md text-gray-500">
+              Este proyecto surge de los valores y responsabilidades sociales y medioambientales de Cuatrovientos, alineados con los ODS (Objetivos de Desarrollo Sostenible), responsabilizándose de su impacto sobre el clima y buscar la ejemplaridad hacia adentro y hacia fuera, formando futuros profesionales responsables y comprometidos con el medio ambiente. 
+            </p>
+          </div>
+          <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
+            <div class="relative z-10">
+              <div
+                class="pb-10 mx-auto prose text-gray-500 prose-indigo lg:max-w-none sm:pb-0"
+              >
+                <p class="pb-3">
+                  Antes de empezar con el proyecto tuvimos que analizar e identificar como implementarlo en el centro, lo que nos llevó a solicitar la financiación al programa Erasmus +, dentro de la Acción Clave KA202 (Asociaciones Estratégicas para el Intercambio de Buenas Prácticas entre centros de Formación Profesional Europeos) y a la búsqueda de socios para llevar a cabo está idea. 
+                </p>
+                
+                <p class="pb-3">
+                  Desde el centro formamos un equipo responsable del proyecto, compuesto por miembros de los diferentes ejes, los cuales son: internacionalización, compromiso e innovación y un asesor externo.
+                </p>
+              
+                <p class="pb-3">
+                  Una vez analizado e identificado el proyecto tuvimos que fijar un objetivo al cual llegar, “Ser un centro neutro en emisiones”, a su vez tuvimos que preparar actividades y jornadas basadas en la metodología ACBP (del Aprendizaje Colaborativo Basado en Proyectos), metodología de enseñanza-aprendizaje, en el que se plantea un proyecto como vía para solucionar un problema o situación de la vida real y que sirve como detonador para que el alumnado consiga las metas de su aprendizaje. 
+                </p>
+              </div>
+            </div>
+            <!-- TODO -->
+            <div   
+              class="relative mx-auto mt-12 text-base max-w-prose lg:mt-0 lg:max-w-none"
+            >
+              <svg
+                class="absolute top-0 right-0 -mt-20 -mr-20 lg:top-auto lg:right-auto lg:bottom-1/2 lg:left-1/2 lg:mt-0 lg:mr-0 xl:top-0 xl:right-0 xl:-mt-20 xl:-mr-20"
+                width="404"
+                height="384"
+                fill="none"
+                viewBox="0 0 404 384"
+                aria-hidden="true"
+              >
+                <defs>
+                  <pattern
+                    id="bedc54bc-7371-44a2-a2bc-dc68d819ae60"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <rect
+                      x="0"
+                      y="0"
+                      width="4"
+                      height="4"
+                      class="text-gray-200"
+                      fill="#9CC5A1"
+                    ></rect>
+                  </pattern>
+                </defs>
+                <rect
+                  width="404"
+                  height="384"
+                  fill="url(#bedc54bc-7371-44a2-a2bc-dc68d819ae60)"
+                ></rect>
+              </svg>
+              <blockquote class="relative bg-white rounded-lg shadow-lg">
+                <div class="px-6 py-8 rounded sm:px-10 sm:pt-10 sm:pb-8">
+                  <div class="relative mt-8 text-lg font-medium text-gray-700">
+                    <svg
+                      class="absolute top-0 left-0 w-8 h-8 text-gray-200 transform -translate-x-3 -translate-y-2"
+                      fill="currentColor"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+                      ></path>
+                    </svg>
+                    <p class="relative pl-5 italic" >
+                      CI Cuatrovientos es una sociedad cooperativa que posee
+                      plena capacidad sobre su estructura empresarial y
+                      contabiliza el 100% de sus emisiones atribuibles a las
+                      actividades sobre las que ejerce el control.
+                    </p>
+                  </div>
+                </div>
+                <cite
+                  class="relative flex items-center px-6 py-5 not-italic rounded-b-lg sm:items-start sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10"
+                  style="background-color: #9cc5a1"
+                >
+                  <!--  <div
+                    class="relative border-2 border-white rounded-full sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2"
+                  >
+                    <img
+                      class="w-12 h-12 bg-indigo-300 rounded-full sm:w-20 sm:h-20"
+                      src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&amp;auto=format&amp;fit=facearea&amp;facepad=2.5&amp;w=160&amp;h=160&amp;q=80"
+                      alt=""
+                    />
+                  </div> -->
+                  <span class="relative ml-4 leading-6 sm:ml-24 sm:pl-1">
+                    <img
+                      src="../assets/img/cuatrovientos/cuatrovientos.png"
+                      alt="Workcation"
+                      class="h-8"
+                    />
+                  </span>
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg mt-11">
+            <h3 class="text-lg font-extrabold text-center uppercase ">Nuestros Objetivos OBS</h3>
+            <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
+              <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+                <div
+                  class="flex justify-center col-span-1 md:col-span-2 lg:col-span-1"
+                >
+                  <img
+                    
+                    src="../fotos\7.png"
+                    alt="Energia Asequible"
+                  />
+                </div>
+                <div
+                  class="flex justify-center col-span-1 md:col-span-2 lg:col-span-1"
+                >
+                  <img
+                   
+                    src="../fotos\11.png"
+                    alt="Cuidades sostenibles"
+                  />
+                </div>
+                <div
+                  class="flex justify-center col-span-1 md:col-span-2 lg:col-span-1"
+                >
+                  <img
+                   
+                    src="../fotos\12.png"
+                    alt="Acción por el clima"
+                  />
+                </div>
+                <div
+                  class="flex justify-center col-span-1 md:col-span-3 lg:col-span-1"
+                >
+                  <img
+                    
+                   src="../fotos\13.png"
+                    alt="Vida de ecosistemas terrestres"
+                  />
+                </div>
+                <div
+                  class="flex justify-center col-span-2 md:col-span-3 lg:col-span-1"
+                >
+                  <img
+                   
+                    src="../fotos\17.png"
+                    alt="Alianza para lograr los Objetivos"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="container mx-auto bg-fixed rounded-lg shadow-lg pt-11 pb-11"
+      style="background-image: url(../assets/img/cuatrovientos/bosquew.jpg)"
+    >
+      <div class="relative">
+        <img
+          class="h-20 mx-auto"
+          src="../assets/img/cuatrovientos/Recurso 1.svg"
+          alt="Workcation"
+        />
+        <blockquote class="mt-10">
+          <div
+            class="max-w-3xl mx-auto text-2xl font-medium leading-9 text-center text-gray-900"
+          >
+            <p>
+              “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              expedita voluptas culpa sapiente alias molestiae. Numquam corrupti
+              in laborum sed rerum et corporis.”
+            </p>
+          </div>
+          <footer class="mt-8"></footer>
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- añadir un titulo estilo el de la pagina principal (stopCO2 CFTrain in VET) para separar las dos secciones -->
+    <!-- seccion: dessarrollo -->
+    <section class="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
+      <div
+      >
+        <div>
+          <h2
+            class="font-bold tracking-tight dark:text-3xl dark:text-center sm:dark:text-5xl dark:text-coolGray-50"
+          >
+            Aliquip definiebas ad est
+          </h2>
+          <p
+            class="max-w-3xl mx-auto mt-4 dark:text-xl dark:text-center dark:text-coolGray-400"
+          >
+            Quando cetero his ne, eum admodum sapientem ut.
+          </p>
+        </div>
+        <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+          <div>
+            <h3
+              class="font-bold tracking-tight dark:text-2xl sm:dark:text-3xl dark:text-coolGray-50"
+            >
+              Ad vix debet docendi
+            </h3>
+            <p class="mt-3 dark:text-lg dark:text-coolGray-400">
+              Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos
+              etiam regione ut, persius eripuit quo id. Sit te euismod
+              tacimates.
+            </p>
+            <div class="mt-12 space-y-12">
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-coolGray-900"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      class="w-7 h-7"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h4
+                    class="font-medium leading-6 dark:text-lg dark:text-coolGray-50"
+                  >
+                    Per ei quaeque sensibus
+                  </h4>
+                  <p class="mt-2 dark:text-coolGray-400">
+                    Ex usu illum iudico molestie. Pro ne agam facete
+                    mediocritatem, ridens labore facete mea ei. Pro id apeirian
+                    dignissim.
+                  </p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-coolGray-900"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      class="w-7 h-7"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h4
+                    class="font-medium leading-6 dark:text-lg dark:text-coolGray-50"
+                  >
+                    Cu imperdiet posidonium sed
+                  </h4>
+                  <p class="mt-2 dark:text-coolGray-400">
+                    Amet utinam aliquando ut mea, malis admodum ocurreret nec
+                    et, elit tibique cu nec. Nec ex maluisset inciderint, ex
+                    quis.
+                  </p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-coolGray-900"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      class="w-7 h-7"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h4
+                    class="font-medium leading-6 dark:text-lg dark:text-coolGray-50"
+                  >
+                    Nulla omittam sadipscing mel ne
+                  </h4>
+                  <p class="mt-2 dark:text-coolGray-400">
+                    At sed possim oporteat probatus, justo graece ne nec, minim
+                    commodo legimus ut vix. Ut eos iudico quando soleat, nam
+                    modus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+            <!-- <div
+              class="absolute w-64 transform -translate-y-14 translate-x-44 h-1/2 pattern-dots-xl inset-5"
+              style="z-index: -1; color: #9cc5a1"
+            ></div> -->
+
+            <div   
+              class="relative mx-auto mt-20 text-base max-w-prose lg:mt-0 lg:max-w-none"
+            >
+              <svg
+                class="absolute top-0 right-0 hidden -mt-20 -mr-20 md:block lg:top-auto lg:right-auto lg:bottom-1/2 lg:left-1/2 lg:mt-0 lg:mr-0 xl:top-0 xl:right-0 xl:-mt-20 xl:-mr-20"
+                width="404"
+                height="384"
+                fill="none"
+                viewBox="0 0 404 384"
+                aria-hidden="true"
+              >
+                <defs>
+                  <pattern
+                    id="bedc54bc-7371-44a2-a2bc-dc68d819ae60"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <rect
+                      x="0"
+                      y="0"
+                      width="4"
+                      height="4"
+                      class="w-1\.5 text-gray-200"
+                      fill="#9CC5A1"
+                    ></rect>
+                  </pattern>
+                </defs>
+                <rect
+                  width="404"
+                  height="384"
+                  fill="url(#bedc54bc-7371-44a2-a2bc-dc68d819ae60)"
+                ></rect>
+              </svg>
+<!--               <blockquote class="relative bg-white rounded-lg shadow-lg">
+                <div class="px-6 py-8 rounded sm:px-10 sm:pt-10 sm:pb-8">
+                  <div class="relative mt-8 text-lg font-medium text-gray-700">
+                    <svg
+                      class="absolute top-0 left-0 w-8 h-8 text-gray-200 transform -translate-x-3 -translate-y-2"
+                      fill="currentColor"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+                      ></path>
+                    </svg>
+                    <p class="relative pl-5">
+                      CI Cuatrovientos es una sociedad cooperativa que posee
+                      plena capacidad sobre su estructura empresarial y
+                      contabiliza el 100% de sus emisiones atribuibles a las
+                      actividades sobre las que ejerce el control.
+                    </p>
+                  </div>
+                </div>
+                <cite
+                  class="relative flex items-center px-6 py-5 not-italic rounded-b-lg sm:items-start sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10"
+                  style="background-color: #9cc5a1"
+                >
+                  
+                  <span class="relative ml-4 leading-6 sm:ml-24 sm:pl-1">
+                    <img
+                      src="../assets/img/cuatrovientos/cuatrovientos.png"
+                      alt="Workcation"
+                      class="h-8"
+                    />
+                  </span>
+                </cite>
+              </blockquote> -->
+              <div aria-hidden="true" class="relative mt-10 lg:mt-0">
+                <img
+                  src="https://source.unsplash.com/random/360x480"
+                  alt=""
+                  class="mx-auto rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+
+              
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+            <div class="lg:col-start-2">
+              <h3
+                class="font-bold tracking-tight dark:text-2xl sm:dark:text-3xl dark:text-coolGray-50"
+              >
+                Eam nibh gloriatur ex
+              </h3>
+              <p class="mt-3 dark:text-lg dark:text-coolGray-400">
+                Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te
+                latine theophrastus. Ea his tale nibh dissentias, mei exerci
+                tamquam euripidis cu.
+              </p>
+              <div class="mt-12 space-y-12">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-coolGray-900"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        class="w-7 h-7"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4
+                      class="font-medium leading-6 dark:text-lg dark:text-coolGray-50"
+                    >
+                      Cibo augue offendit has ad
+                    </h4>
+                    <p class="mt-2 dark:text-coolGray-400">
+                      An per velit appellantur, ut utinam minimum nominavi sit,
+                      odio nostro habemus ne nec. Ne sonet regione contentiones
+                      est.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-coolGray-900"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        class="w-7 h-7"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4
+                      class="font-medium leading-6 dark:text-lg dark:text-coolGray-50"
+                    >
+                      At eum ferri luptatum lobortis
+                    </h4>
+                    <p class="mt-2 dark:text-coolGray-400">
+                      Te per quidam maiorum ocurreret, etiam delicatissimi usu
+                      ad. Ne has quod periculis. Te sit primis iisque
+                      efficiantur.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-md"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        class="w-7 h-7"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4
+                      class="font-medium leading-6 dark:text-lg dark:text-coolGray-50"
+                    >
+                      Dicunt verterem evertitur eu sea
+                    </h4>
+                    <p class="mt-2 dark:text-coolGray-400">
+                      Audire principes rationibus eam an, autem nominavi
+                      luptatum per te. Sumo fabulas vim eu, sonet saperet
+                      eleifend ut vix.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
+              <img
+                src="https://source.unsplash.com/random/361x481"
+                alt=""
+                class="m-5 mx-auto rounded-lg shadow-lg"
+              />
+              <div
+                class="absolute w-64 transform -translate-y-9 h-1/2 pattern-dots-xl inset-5"
+                style="z-index: -1; color: #9cc5a1"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section>
+      <div class="py-16 overflow-hidden">
+        <div class="px-4 mx-auto space-y-8 max-w-7xl sm:px-6 lg:px-8">
+          <div class="mx-auto text-base max-w-prose lg:max-w-none">
+            <h2
+              class="text-base font-semibold tracking-wide text-indigo-600 uppercase"
+            >
+              Transactions
+            </h2>
+            <!-- <p
+              class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl"
+            >
+              What makes us different
+            </p> -->
+          </div>
+          <div
+            class="relative z-10 mx-auto text-base max-w-prose lg:max-w-5xl lg:mx-0 lg:pr-72"
+          >
+            <p class="text-lg text-gray-500">
+              Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum
+              urna sed consectetur neque tristique pellentesque. Blandit amet,
+              sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi
+              vel porttitor vitae ut. Amet vitae fames senectus vitae.
+            </p>
+          </div>
+          <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
+            <div class="relative z-10">
+              <div
+                class="pb-10 mx-auto prose text-gray-500 prose-indigo lg:max-w-none sm:pb-0"
+              >
+                <p>
+                  Sollicitudin tristique eros erat odio sed vitae, consequat
+                  turpis elementum. Lorem nibh vel, eget pretium arcu vitae.
+                  Eros eu viverra donec ut volutpat donec laoreet quam urna.
+                </p>
+                <ul>
+                  <li>Quis elit egestas venenatis mattis dignissim.</li>
+                  <li>
+                    Cras cras lobortis vitae vivamus ultricies facilisis tempus.
+                  </li>
+                  <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
+                </ul>
+                <p>
+                  Rhoncus nisl, libero egestas diam fermentum dui. At quis
+                  tincidunt vel ultricies. Vulputate aliquet velit faucibus
+                  semper. Pellentesque in venenatis vestibulum consectetur nibh
+                  id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi
+                  enim fermentum lacus in. Viverra.
+                </p>
+                <h3>We’re here to help</h3>
+                <p>
+                  Tincidunt integer commodo, cursus etiam aliquam neque, et.
+                  Consectetur pretium in volutpat, diam. Montes, magna cursus
+                  nulla feugiat dignissim id lobortis amet. Laoreet sem est
+                  phasellus eu proin massa, lectus. Diam rutrum posuere donec
+                  ultricies non morbi. Mi a platea auctor mi.
+                </p>
+              </div>
+            </div>
+            <!-- TODO -->
+            <div   
+              class="relative mx-auto mt-12 text-base max-w-prose lg:mt-0 lg:max-w-none"
+            >
+              <svg
+                class="absolute top-0 right-0 -mt-20 -mr-20 lg:top-auto lg:right-auto lg:bottom-1/2 lg:left-1/2 lg:mt-0 lg:mr-0 xl:top-0 xl:right-0 xl:-mt-20 xl:-mr-20"
+                width="404"
+                height="384"
+                fill="none"
+                viewBox="0 0 404 384"
+                aria-hidden="true"
+              >
+                <defs>
+                  <pattern
+                    id="bedc54bc-7371-44a2-a2bc-dc68d819ae60"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <rect
+                      x="0"
+                      y="0"
+                      width="4"
+                      height="4"
+                      class="text-gray-200"
+                      fill="#9CC5A1"
+                    ></rect>
+                  </pattern>
+                </defs>
+                <rect
+                  width="404"
+                  height="384"
+                  fill="url(#bedc54bc-7371-44a2-a2bc-dc68d819ae60)"
+                ></rect>
+              </svg>
+              <blockquote class="relative bg-white rounded-lg shadow-lg">
+                <div class="px-6 py-8 rounded sm:px-10 sm:pt-10 sm:pb-8">
+                  <div class="relative mt-8 text-lg font-medium text-gray-700">
+                    <svg
+                      class="absolute top-0 left-0 w-8 h-8 text-gray-200 transform -translate-x-3 -translate-y-2"
+                      fill="currentColor"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+                      ></path>
+                    </svg>
+                    <p class="relative pl-5">
+                      CI Cuatrovientos es una sociedad cooperativa que posee
+                      plena capacidad sobre su estructura empresarial y
+                      contabiliza el 100% de sus emisiones atribuibles a las
+                      actividades sobre las que ejerce el control.
+                    </p>
+                  </div>
+                </div>
+                <cite
+                  class="relative flex items-center px-6 py-5 not-italic rounded-b-lg sm:items-start sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10"
+                  style="background-color: #9cc5a1"
+                >
+                  <!--  <div
+                    class="relative border-2 border-white rounded-full sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2"
+                  >
+                    <img
+                      class="w-12 h-12 bg-indigo-300 rounded-full sm:w-20 sm:h-20"
+                      src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&amp;auto=format&amp;fit=facearea&amp;facepad=2.5&amp;w=160&amp;h=160&amp;q=80"
+                      alt=""
+                    />
+                  </div> -->
+                  <span class="relative ml-4 leading-6 sm:ml-24 sm:pl-1">
+                    <img
+                      src="../assets/img/cuatrovientos/cuatrovientos.png"
+                      alt="Workcation"
+                      class="h-8"
+                    />
+                  </span>
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div
+      class="container mx-auto bg-cover rounded-lg shadow-lg md:bg-fixed pt-11 pb-11"
+      style="background-image: url(../assets/img/cuatrovientos/bosquew.jpg)"
+    >
+      <div class="relative">
+        <img
+          class="h-20 mx-auto"
+          src="../assets/img/cuatrovientos/Recurso 1.svg"
+          alt="Workcation"
+        />
+        <blockquote class="mt-10">
+          <div
+            class="max-w-3xl mx-auto text-2xl font-medium leading-9 text-center text-gray-900"
+          >
+            <p>
+              “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              expedita voluptas culpa sapiente alias molestiae. Numquam corrupti
+              in laborum sed rerum et corporis.”
+            </p>
+          </div>
+          <footer class="mt-8"></footer>
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- añadir un titulo estilo el de la pagina principal (stopCO2 CFTrain in VET) para separar las dos secciones -->
+    <!-- seccion: productos -->
+
+    <section class="container pt-16 mx-auto">
+      <!-- la galeria es un poco trambolica -->
+
+      <div class="flex flex-col grid-cols-8 grid-rows-4 gap-4 md:grid">
+        <div class="flex row-span-2 md:col-span-3">
+          <img
+            src="../assets/img/cuatrovientos1.jpg"
+            alt="1"
+            class="object-cover w-full h-full"
+          />
+        </div>
+        <div class="flex row-span-2 md:col-span-3">
+          <img
+            src="../assets/img/cuatrovientos1.jpg"
+            alt="1"
+            class="object-cover w-full h-full"
+          />
+        </div>
+        <div class="flex row-span-2 md:col-span-2">
+          <img
+            src="../assets/img/cuatrovientos1.jpg"
+            alt="1"
+            class="object-cover w-full h-full"
+          />
+        </div>
+        <div class="flex row-span-2 md:col-span-2">
+          <img
+            src="../assets/img/cuatrovientos1.jpg"
+            alt="1"
+            class="object-cover w-full h-full"
+          />
+        </div>
+        <div class="flex row-span-2 md:col-span-2">
+          <img
+            src="../assets/img/cuatrovientos1.jpg"
+            alt="1"
+            class="object-cover w-full h-full"
+          />
+        </div>
+        <div class="flex row-span-2 md:col-span-2">
+          <img
+            src="../assets/img/cuatrovientos1.jpg"
+            alt="1"
+            class="object-cover w-full h-full"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
