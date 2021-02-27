@@ -15,7 +15,6 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-
 h4 :first-child {
   color: #216869;
 }
@@ -35,7 +34,6 @@ h4 :first-child {
 #youtube {
   padding-top: 56.25%;
 }
-.seleccionado{
-   border-bottom: 10px, solid, #216869 !important;  
+.seleccionado {
+  border-bottom: 10px, solid, #216869 !important;
 }
-
