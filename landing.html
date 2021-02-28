@@ -10,6 +10,10 @@
     />
     <link rel="stylesheet" href="./assets/main.css" />
     <link rel="stylesheet" href="./assets/css/landing.css" />
+    <script
+      src="https://kit.fontawesome.com/72994fe6c5.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Stop CO2 | CF Train in VET</title>
   </head>
@@ -72,7 +76,6 @@
                 />
               </div>
               <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
                 <a
                   href="#"
                   class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800"
@@ -121,72 +124,12 @@
                   />
                 </svg>
               </button>
-
-              <!-- Profile dropdown -->
-              <!-- <div
-                @click.away="open = false"
-                class="relative ml-3"
-                x-data="{ open: false }"
-              >
-                <div>
-                  <button
-                    @click="open = !open"
-                    class="flex text-sm bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                    id="user-menu"
-                    aria-haspopup="true"
-                    x-bind:aria-expanded="open"
-                  >
-                    <span class="sr-only">Open user menu</span>
-                    <img
-                      class="w-8 h-8 rounded-full"
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <transition
-                  enter-active-class="transition duration-200 ease-out"
-                  enter-class="transform scale-95 opacity-0"
-                  enter-to-class="transform scale-100 opacity-100"
-                  leave-active-class="transition duration-75 ease-in"
-                  leave-class="transform scale-100 opacity-100"
-                  leave-to-class="transform scale-95 opacity-0"
-                  ><div
-                    x-show="open"
-                    x-description="Profile dropdown panel, show/hide based on dropdown state."
-                    class="absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5"
-                    role="menu"
-                    aria-orientation="vertical"
-                    aria-labelledby="user-menu"
-                  >
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      role="menuitem"
-                      >Your Profile</a
-                    >
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      role="menuitem"
-                      >Settings</a
-                    >
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      role="menuitem"
-                      >Sign out</a
-                    >
-                  </div></transition
-                >
-              </div> -->
             </div>
           </div>
         </div>
 
         <div class="hidden sm:hidden" id="menu">
           <div class="pt-2 pb-4 space-y-1">
-            <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
             <a
               href="#"
               class="block py-2 pl-3 pr-4 text-base font-medium text-gray-800 border-l-4 focus:border-green-800 focus:bg-green-50 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
@@ -226,11 +169,11 @@
                   <span>CUATROVIENTOS</span> PRESENTA,
                 </h4>
                 <h1 class="text-6xl font-semibold text-black lef">Stop CO2</h1>
-                <p class="pb-5 mt-4 text-lg text-gray-300">
-                  CF Train in VET, es un proyecto de desarrollo sostenible de
-                  nuestro centro Cuatrovientos, donde el objetivo principal es
-                  poder conseguir ser el primer centro Navarro en emisiones 0,
-                  para poder concienciar a otros centros.
+                <p class="pb-5 mt-4 text-lg text-gray-600">
+                  Stop CO2 | CF Train in VET, es un proyecto de desarrollo
+                  sostenible de CI Cuatrovientos, donde el objetivo principal es
+                  poder conseguir ser el primer centro educativo Navarro neutro
+                  emisiones.
                 </p>
                 <a
                   href="#Resumen"
@@ -276,9 +219,9 @@
       </section>
 
       <!-- timeline -->
-      <div class="container mx-auto">
+      <section class="container mx-auto">
         <div class="flex flex-col grid-cols-9 mx-auto md:grid">
-          <!-- left -->
+          <!-- card left -->
           <div class="flex flex-row-reverse md:contents">
             <div class="col-start-1 col-end-5 p-4 my-4 ml-auto rounded-xl">
               <div class="max-w-sm overflow-hidden rounded shadow-lg tarjeta">
@@ -334,7 +277,7 @@
               ></div>
             </div>
           </div>
-          <!-- right -->
+          <!-- card right -->
           <div class="flex md:contents">
             <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
               <div class="flex items-center justify-center w-6 h-full">
@@ -390,7 +333,7 @@
               </div>
             </div>
           </div>
-          <!-- left -->
+          <!-- card left -->
           <div class="flex flex-row-reverse md:contents">
             <div class="col-start-1 col-end-5 p-4 my-4 ml-auto rounded-xl">
               <div class="max-w-sm overflow-hidden rounded shadow-lg tarjeta">
@@ -447,11 +390,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
       <!-- Socios -->
-      <!-- relative -->
-      <section class="block pb-20 fondoVerde">
-        <div class="container px-4 pb-24 mx-auto lg:pt-24 lg:pb-64">
+      <section class="block fondoVerde">
+        <div class="container px-4 pb-24 mx-auto lg:pt-24">
           <div class="flex flex-wrap justify-center text-center">
             <div class="w-full px-4 lg:w-6/12">
               <h2 class="text-4xl font-semibold text-white">Nuestros Socios</h2>
@@ -526,11 +469,30 @@
         </div>
       </section>
       <!-- Contacto -->
-      <section class="block py-24 lg:pt-0 fondoVerde">
-        <div class="container px-4 mx-auto">
-          <div class="flex flex-wrap justify-center -mt-48 lg:-mt-64">
+      <section class="block py-24 lg:pt-12">
+        <div class="container px-4 mx-auto text-center">
+          <h2 class="text-4xl font-semibold">
+            Ponte en contacto con Cuatrovientos
+          </h2>
+          <p class="mt-4 mb-4 text-lg leading-relaxed">
+            Puedes visitar nuestras redes sociales para estar al día o puedes
+            enviarnos un e-mail a través del siguiente formulario
+          </p>
+          <div class="flex justify-between mb-12 md:justify-center">
+            <a href="" class="colorVerde md:mr-11">
+              <i class="fab fa-instagram-square fa-7x"></i>
+            </a>
+            <a href="" class="colorVerde md:mr-11">
+              <i class="fab fa-facebook-square fa-7x"></i>
+            </a>
+            <a href="" class="colorVerde">
+              <i class="fab fa-twitter-square fa-7x"></i>
+            </a>
+          </div>
+
+          <div class="flex flex-wrap justify-center">
             <form
-              class="w-full max-w-lg p-16 bg-white rounded-lg"
+              class="w-full max-w-lg p-16 text-left bg-gray-100 shadow-2xl rounded-2xl"
               action="mailto:info@cuatrovientos.org"
             >
               <h2 class="text-3xl font-semibold pb-11">
@@ -731,10 +693,4 @@
       </div>
     </footer>
   </body>
-  <!-- <script>
-    function toggleNavbar(collapseID) {
-      document.getElementById(collapseID).classList.toggle("hidden");
-      document.getElementById(collapseID).classList.toggle("block");
-    }
-  </script> -->
 </html>

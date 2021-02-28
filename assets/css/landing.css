@@ -37,3 +37,6 @@ h4 :first-child {
 .seleccionado {
   border-bottom: 10px, solid, #216869 !important;
 }
+.colorVerde {
+  color: #216869;
+}
