@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+.prueba:hover {
+  display: block;
+}
+.texto {
+  font-family: "Raleway", sans-serif;
+}
+iframe {
+  width: 100%;
+  height: 58rem;
+}
+.colorVerde {
+  color: #216869;
+}
+html {
+  scroll-behavior: smooth;
+}

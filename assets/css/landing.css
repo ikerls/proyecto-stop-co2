@@ -1,7 +1,18 @@
 /* Añadir todas las etiquetas style de landing html aquí como clases */
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 html {
   scroll-behavior: smooth;
+}
+p {
+  font-family: "Nunito", sans-serif;
+}
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
 }
 
 h4 :first-child {
@@ -23,3 +34,36 @@ h4 :first-child {
 #youtube {
   padding-top: 56.25%;
 }
+.seleccionado {
+  border-bottom: 10px, solid, #216869 !important;
+}
+.colorVerde {
+  color: #216869;
+}
+.tamañosocio {
+  height: 75%;
+  margin-top: 12%;
+}
+.tamañosocio2 {
+  height: 60%;
+  width: 100%;
+  margin-top: 15%;
+}
+.tamañosocio3{
+  height: 65%;
+  width: 67%;
+  margin-top: 10%;
+}
+.tamañosocio4{
+  height: 65%;
+  width: 100%;
+  margin-top: 15%;
+  margin-right: 10%;
+}
+.tamañosocio5{
+  height: 25%;
+  width: 100%;
+  margin-top: 30%;
+}
+
+

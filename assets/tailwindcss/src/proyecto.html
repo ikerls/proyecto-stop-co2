@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop CO2 | CF Train in VET</title>
+    <link rel="stylesheet" href="../assets/main.css" />
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/72994fe6c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/proyecto.css" />
+  </head>
+
+  <body class="antialiased">
+    <a href="./landing.html" target="_self">
+      <div
+        class="hidden md:block md:fixed md:z-40 md:w-12 md:h-12 md:p-1 md:bg-green-800 md:rounded-full md:right-14 md:bottom-14"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="#9CC5A1"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M11 19l-7-7 7-7m8 14l-7-7 7-7"
+          />
+        </svg>
+      </div>
+    </a>
+
+    <div class="container fixed z-50 justify-center min-w-full">
+      <nav class="bg-white shadow">
+        <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div class="relative flex justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button -->
+              <button id="boton">
+                <span class="sr-only">Open main menu</span>
+                <!-- Icon when menu is closed. -->
+                <svg
+                  class="block w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+                <!-- Icon when menu is open. -->
+                <svg
+                  class="hidden w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start"
+            >
+              <div class="flex items-center flex-shrink-0">
+                <img
+                  class="block w-auto h-8 lg:hidden"
+                  src="../assets/img/cuatrovientos/Recurso2.png"
+                  alt="Workflow"
+                />
+                <img
+                  class="hidden w-auto h-8 lg:block"
+                  src="../assets/img/cuatrovientos/Recurso2.png"
+                  alt="Workflow"
+                />
+              </div>
+              <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
+                <a
+                  href="../landing.html"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800"
+                >
+                  Inicio
+                </a>
+                <a
+                  href="#SobreElProyecto"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800"
+                >
+                  Sobre el Proyecto
+                </a>
+                <a
+                  href="#Actividades"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800"
+                >
+                  Actividades
+                </a>
+                <a
+                  href="#Galeria"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800"
+                >
+                  Galería
+                </a>
+              </div>
+            </div>
+            <div
+              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+            >
+              <button
+                class="p-1 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800"
+              >
+                <span class="sr-only">View notifications</span>
+                <svg
+                  class="w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden sm:hidden" id="menu">
+          <div class="pt-2 pb-4 space-y-1">
+            <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
+            <a
+              href="../landing.html"
+              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-800 border-l-4 focus:border-green-800 focus:bg-green-50 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
+              >Inicio</a
+            >
+            <a
+              href="#SobreElProyecto"
+              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 focus:border-green-800 focus:bg-green-50"
+              >Sobre El proyecto</a
+            >
+            <a
+              href="#Actividades"
+              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 focus:border-green-800 focus:bg-green-50"
+              >Actividades</a
+            >
+            <a
+              href="#Galeria"
+              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 focus:border-green-800 focus:bg-green-50"
+              >Galería</a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+    <script src="../prueba.js"></script>
+
+    <div
+      class="pt-24 pb-12 mx-auto overflow-hidden bg-cover shadow-lg md:pb-20 lg:pb-24 md:bg-fixed"
+      style="background-image: url(../assets/img/imgfondo/5.jpg)"
+    >
+      <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="relative">
+          <img
+            class="h-20 mx-auto"
+            src="../assets/img/cuatrovientos/Recurso2.png"
+            alt="Workcation"
+          />
+          <div class="mt-10">
+            <div
+              class="relative max-w-3xl mx-auto text-2xl font-medium leading-9 text-center text-gray-900"
+            >
+              <svg
+                class="absolute top-0 left-0 w-8 h-8 text-gray-200 transform -translate-x-3 -translate-y-2 md:-translate-x-5"
+                fill="currentColor"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+                ></path>
+              </svg>
+
+              <p class="text-white">
+                Proponemos un Proyecto Educativo a largo plazo que debe empezar
+                a desarrollarse cuanto antes, dando prioridad a las acciones más
+                concretas y cercanas, ajustándose a las posibilidades y
+                limitaciones que presentan los recursos naturales.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- seccion de preparacion / contexto -->
+    <section id="SobreElProyecto">
+      <div class="py-16 overflow-hidden">
+        <div class="px-4 mx-auto space-y-8 max-w-7xl sm:px-6 lg:px-8">
+          <div class="mx-auto text-base max-w-prose lg:max-w-none">
+            <h2
+              class="text-base text-4xl font-semibold tracking-wide uppercase colorVerde"
+            >
+              Sobre El Proyecto
+            </h2>
+            <!-- <p
+            class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl"
+          >
+            What makes us different
+          </p> -->
+          </div>
+          <div
+            class="relative z-10 mx-auto text-base max-w-prose lg:max-w-5xl lg:mx-0 lg:pr-72"
+          >
+            <p class="text-gray-500 text-md">
+              Este proyecto surge de los valores y responsabilidades sociales y
+              medioambientales de Cuatrovientos, alineados con los ODS
+              (Objetivos de Desarrollo Sostenible), responsabilizándose de su
+              impacto sobre el clima y buscar la ejemplaridad hacia adentro y
+              hacia fuera, formando futuros profesionales responsables y
+              comprometidos con el medio ambiente.
+            </p>
+          </div>
+          <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
+            <div class="relative z-10">
+              <div
+                class="pb-10 mx-auto prose text-gray-500 prose-indigo lg:max-w-none sm:pb-0"
+              >
+                <p class="pb-3">
+                  Antes de empezar con el proyecto tuvimos que analizar e
+                  identificar como implementarlo en el centro, lo que nos llevó
+                  a solicitar la financiación al programa Erasmus +, dentro de
+                  la Acción Clave KA202 (Asociaciones Estratégicas para el
+                  Intercambio de Buenas Prácticas entre centros de Formación
+                  Profesional Europeos) y a la búsqueda de socios para llevar a
+                  cabo está idea.
+                </p>
+
+                <p class="pb-3">
+                  Desde el centro formamos un equipo responsable del proyecto,
+                  compuesto por miembros de los diferentes ejes, los cuales son:
+                  internacionalización, compromiso e innovación y un asesor
+                  externo.
+                </p>
+
+                <p class="pb-3">
+                  Una vez analizado e identificado el proyecto tuvimos que fijar
+                  un objetivo al cual llegar, “Ser un centro neutro en
+                  emisiones”, a su vez tuvimos que preparar actividades y
+                  jornadas basadas en la metodología ACBP (del Aprendizaje
+                  Colaborativo Basado en Proyectos), metodología de
+                  enseñanza-aprendizaje, en el que se plantea un proyecto como
+                  vía para solucionar un problema o situación de la vida real y
+                  que sirve como detonador para que el alumnado consiga las
+                  metas de su aprendizaje.
+                </p>
+              </div>
+            </div>
+            <!-- TODO -->
+            <div
+              class="relative mx-auto mt-12 text-base max-w-prose lg:mt-0 lg:max-w-none"
+            >
+              <svg
+                class="absolute top-0 right-0 -mt-20 -mr-20 lg:top-auto lg:right-auto lg:bottom-1/2 lg:left-1/2 lg:mt-0 lg:mr-0 xl:top-0 xl:right-0 xl:-mt-20 xl:-mr-20"
+                width="404"
+                height="384"
+                fill="none"
+                viewBox="0 0 404 384"
+                aria-hidden="true"
+              >
+                <defs>
+                  <pattern
+                    id="svg1"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <rect
+                      x="0"
+                      y="0"
+                      width="4"
+                      height="4"
+                      class="text-gray-200"
+                      fill="#9CC5A1"
+                    ></rect>
+                  </pattern>
+                </defs>
+                <rect width="404" height="384" fill="url(#svg1)"></rect>
+              </svg>
+              <div class="relative bg-white rounded-lg shadow-lg">
+                <div class="px-6 py-8 rounded sm:px-10 sm:pt-10 sm:pb-8">
+                  <div class="relative mt-8 text-lg font-medium text-gray-700">
+                    <svg
+                      class="absolute top-0 left-0 w-8 h-8 text-gray-200 transform -translate-x-3 -translate-y-2"
+                      fill="currentColor"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+                      ></path>
+                    </svg>
+                    <p class="relative pl-5">
+                      CI Cuatrovientos es una sociedad cooperativa que posee
+                      plena capacidad sobre su estructura empresarial y
+                      contabiliza el 100% de sus emisiones atribuibles a las
+                      actividades sobre las que ejerce el control.
+                    </p>
+                  </div>
+                </div>
+                <cite
+                  class="relative flex items-center px-6 py-5 not-italic rounded-b-lg sm:items-start sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10"
+                  style="background-color: #9cc5a1"
+                >
+                  <!--  <div
+                    class="relative border-2 border-white rounded-full sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2"
+                  >
+                    <img
+                      class="w-12 h-12 bg-indigo-300 rounded-full sm:w-20 sm:h-20"
+                      src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&amp;auto=format&amp;fit=facearea&amp;facepad=2.5&amp;w=160&amp;h=160&amp;q=80"
+                      alt=""
+                    />
+                  </div> -->
+                  <span class="relative ml-4 leading-6 sm:ml-24 sm:pl-1">
+                    <img
+                      src="../assets/img/cuatrovientos/cuatrovientos.png"
+                      alt="Workcation"
+                      class="h-8"
+                    />
+                  </span>
+                </cite>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 overflow-hidden md:py-20 lg:py-24">
+      <div
+        class="pb-20 mx-auto bg-cover shadow-lg md:bg-fixed pt-11"
+        style="background-image: url(../assets/img/imgfondo/5.jpg)"
+      >
+        <div class="relative">
+          <img
+            class="h-20 mx-auto"
+            src="../assets/img/cuatrovientos/Recurso2.png"
+            alt="Workcation"
+          />
+          <div class="mt-10">
+            <div
+              class="relative max-w-3xl mx-auto text-2xl font-medium leading-9 text-center text-gray-900"
+            >
+              <svg
+                class="absolute top-0 left-0 w-8 h-8 text-gray-200 transform -translate-x-3 -translate-y-2 md:-translate-x-5"
+                fill="currentColor"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+                ></path>
+              </svg>
+              <p class="ml-1 text-white">
+                Proponemos la participación de la comunidad educativa, a través
+                de procesos y metodologías activas que desarrollen la reflexión,
+                colaboración y responsabilidad que, junto con el asesoramiento
+                técnico, contribuyan a la creación de hábitos de vida
+                sostenibles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- seccion: dessarrollo -->
+    <section
+      class="container relative px-4 py-16 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8"
+      id="Actividades"
+    >
+      <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+        <div class="relative lg:row-start-1 lg:col-start-2">
+          <svg
+            class="absolute top-0 right-0 hidden -mt-20 -mr-20 lg:block"
+            width="404"
+            height="384"
+            fill="none"
+            viewBox="0 0 404 384"
+            aria-hidden="true"
+          >
+            <rect width="404" height="384" fill="url(#svg1)"></rect>
+          </svg>
+          <div class="relative mx-auto text-base max-w-prose lg:max-w-none">
+            <figure>
+              <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
+                <img
+                  class="object-cover object-center rounded-lg shadow-lg"
+                  src="../assets/img/galeria/jornadaStop/foto(6).jpg"
+                  alt="Whitney leaning against a railing on a downtown street"
+                  width="1184"
+                  height="1376"
+                />
+              </div>
+              <figcaption class="flex mt-3 text-sm text-gray-500">
+                <svg
+                  class="flex-none w-5 h-5 text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="ml-2">Jornada CI Cuatrovientos</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="mt-8 space-y-12 lg:mt-0 lg:items-center">
+          <h2
+            class="text-base text-4xl font-semibold tracking-wide uppercase colorVerde"
+          >
+            Actividades
+          </h2>
+
+          <p class="mt-3 dark:text-lg dark:text-coolGray-400">
+            En Cuatrovientos nos hemos volcado con el proyecto #stopco2. El
+            objetivo de este taller es conocer qué emisiones de CO2 enviamos a
+            la atmósfera como instituto y ver cómo podemos reducirlas y
+            compensarlas para ser un CENTRO NEUTRO EN EMISIONES.
+          </p>
+          <div class="flex mt-8">
+            <div class="flex-shrink-0">
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-coolGray-900"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="w-7 h-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4
+                class="font-medium leading-6 dark:text-lg dark:text-coolGray-50"
+              >
+                Certificación energética 100% renovable.
+              </h4>
+              <p class="mt-2 dark:text-coolGray-400">
+                En el centro nos encargarnos de que toda la energia que
+                recivamos sea 100% renovable.
+              </p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-coolGray-900"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="w-7 h-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4
+                class="font-medium leading-6 dark:text-lg dark:text-coolGray-50"
+              >
+                Instalación de sistema de producción de energía renovable en el
+                edificio
+              </h4>
+              <p class="mt-2 dark:text-coolGray-400">
+                Instalacion de Placas solares,etc...
+              </p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-coolGray-900"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="w-7 h-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4
+                class="font-medium leading-6 dark:text-lg dark:text-coolGray-50"
+              >
+                Desarrollo de productos que contribullan al plan de reduccion y
+                compensacion.
+              </h4>
+              <p class="mt-2 dark:text-coolGray-400">
+                El alumnado de 1º de cada ciclo realizará un trabajo en el aula
+                (jornada de trabajo) en el que desarrollen algún producto
+                quecontribuya a las medidas propuestas en el Plan de reducción y
+                compensación.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8 md:mt-24">
+        <div class="relative lg:row-start-1 lg:col-start-1">
+          <svg
+            class="absolute top-0 left-0 hidden -mt-20 -ml-20 lg:block"
+            width="404"
+            height="384"
+            fill="none"
+            viewBox="0 0 404 384"
+            aria-hidden="true"
+          >
+            <defs></defs>
+            <rect width="404" height="384" fill="url(#svg1)"></rect>
+          </svg>
+          <div class="relative mx-auto text-base max-w-prose lg:max-w-none">
+            <figure>
+              <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
+                <img
+                  class="object-cover object-center rounded-lg shadow-lg"
+                  src="../assets/img/galeria/semanaCultural/foto(7).jpg"
+                  alt="Whitney leaning against a railing on a downtown street"
+                  width="1184"
+                  height="1376"
+                />
+              </div>
+              <figcaption class="flex mt-3 text-sm text-gray-500">
+                <svg
+                  class="flex-none w-5 h-5 text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="ml-2">Jornada CI Cuatrovientos</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="mt-8 space-y-12 lg:mt-0 lg:items-center">
+          <h3
+            class="font-bold tracking-tight dark:text-2xl sm:dark:text-3xl dark:text-coolGray-50"
+          >
+            sdfsfsfdsdfg
+          </h3>
+          <p class="mt-3 dark:text-lg dark:text-coolGray-400">wfewfwefewf.</p>
+          <div class="flex mt-8">
+            <div class="flex-shrink-0">
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-coolGray-900"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="w-7 h-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4
+                class="font-medium leading-6 dark:text-lg dark:text-coolGray-50"
+              >
+                Charlas informtivas
+              </h4>
+              <p class="mt-2 dark:text-coolGray-400">
+                En dicha jornada hemos podido contar con la colaboración de:
+                <br />
+                Itziar Gómez López – Consejera de Desarrollo Rural y Medio
+                Ambiente del Gob. Navarra <br />
+                Tomás Rodríguez Garraza – Director General de FP del Gob.
+                Navarra<br />
+                Mikel Baztán – Técnico de Sostenibilidad y defensor del Medio
+                Ambiente<br />
+                Luís Orús – Director del Centro de Referencia Nacional en
+                Energias Renovables y Eficiencia Energética
+              </p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-coolGray-900"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="w-7 h-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4
+                class="font-medium leading-6 dark:text-lg dark:text-coolGray-50"
+              >
+                Actividades relacionadas con la jornada
+              </h4>
+              <p class="mt-2 dark:text-coolGray-400">
+                Entre las actividades que hicimos el alumnado y el docente,
+                hemos hecho unos murales con las cartulinas de lo aprendido en
+                la jornada del stop co2
+              </p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-coolGray-900"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="w-7 h-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4
+                class="font-medium leading-6 dark:text-lg dark:text-coolGray-50"
+              >
+                Plantación de 100 árboles.
+              </h4>
+              <p class="mt-2 dark:text-coolGray-400">
+                Plantaremos arboles para la compensacion de emisiones
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="overflow-hidden">
+      <div
+        class="pb-20 mx-auto bg-cover shadow-lg md:bg-fixed pt-11"
+        style="background-image: url(../assets/img/imgfondo/5.jpg)"
+      >
+        <div class="relative">
+          <img
+            class="h-20 mx-auto"
+            src="../assets/img/cuatrovientos/Recurso2.png"
+            alt="Workcation"
+          />
+          <div class="mt-10">
+            <div
+              class="relative max-w-3xl mx-auto text-2xl font-medium leading-9 text-center text-gray-900"
+            >
+              <div class="rounded-xl">
+                <svg
+                  class="absolute top-0 left-0 w-8 h-8 text-gray-200 transform -translate-x-3 -translate-y-2 md:-translate-x-5"
+                  fill="currentColor"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+                  ></path>
+                </svg>
+                <p class="font-medium text-white md:text-3xl">
+                  Apostamos por desarrollar el pensamiento crítico para el
+                  análisis de la realidad que nos permita reducir y repensar las
+                  decisiones que tienen que ver con el consumo, para alargar la
+                  vida útil de lo que tenemos, para su reutilización y para su
+                  reciclaje.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="px-4 mx-auto space-y-12 coontainer max-w-7xl sm:px-6 lg:px-8"
+      id="Galeria"
+    >
+      <article>
+        <div class="py-4 bg-white">
+          <div class="mx-auto max-w-7xl">
+            <div class="lg:text-center">
+              <h2
+                class="mt-20 text-base text-4xl font-semibold tracking-wide text-left uppercase colorVerde"
+              >
+                Galería
+              </h2>
+              <h2
+                class="mb-2 text-3xl font-medium leading-8 tracking-tight text-gray-900 sm:text-4xl"
+              >
+                Jornada Stop Co2
+              </h2>
+              <p
+                class="text-base font-semibold tracking-wide text-green-600 uppercase"
+              >
+                Galería
+              </p>
+              <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
+                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
+                magnam voluptatum cupiditate veritatis in accusamus quisquam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container block mx-auto mt-20">
+          <div class="relative flex flex-col w-full md:flex-row">
+            <!-- un flex con tres columnas (cada columna es div de los de abajo) -->
+            <div
+              class="flex-grow flex-shrink block md:mr-6"
+              style="flex-basis: 0"
+            >
+              <img
+                src="../assets/img/galeria/jornadaStop/foto(7).jpg"
+                alt="1"
+                class="relative block mb-6"
+              />
+
+              <img
+                src="../assets/img/galeria/jornadaStop/foto(2).jpg"
+                alt="2"
+                class="relative block mb-6"
+              />
+            </div>
+            <div
+              class="flex-grow flex-shrink block md:mr-6"
+              style="flex-basis: 0"
+            >
+              <img
+                src="../assets/img/galeria/jornadaStop/foto(3).jpg"
+                alt="1"
+                class="relative block mb-6"
+              />
+
+              <img
+                src="../assets/img/galeria/jornadaStop/foto(4).jpg"
+                alt="2"
+                class="relative block mb-6"
+              />
+            </div>
+            <!-- para añadir imagenes a cada columna hay que ponerlas dentro del div las que se deformen prueba a ponerlas con object-cover w-full -->
+            <div class="flex-grow flex-shrink block" style="flex-basis: 0">
+              <img
+                src="../assets/img/galeria/jornadaStop/foto(5).jpg"
+                alt="2"
+                class="relative block mb-6"
+              />
+              <img
+                src="../assets/img/galeria/jornadaStop/foto(6).jpg"
+                alt="2"
+                class="relative block mb-6"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="py-16 bg-white">
+          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+              <h2
+                class="mb-2 text-3xl font-medium leading-8 tracking-tight text-gray-900 sm:text-4xl"
+              >
+                Gymkana De Sensibilización
+              </h2>
+              <p
+                class="text-base font-semibold tracking-wide text-green-600 uppercase"
+              >
+                Galería
+              </p>
+              <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
+                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
+                magnam voluptatum cupiditate veritatis in accusamus quisquam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container block mx-auto mt-20">
+          <div class="relative flex flex-col w-full md:flex-row">
+            <!-- un flex con tres columnas (cada columna es div de los de abajo) -->
+            <div
+              class="flex-grow flex-shrink block md:mr-6"
+              style="flex-basis: 0"
+            >
+              <img
+                src="../assets/img/galeria/gynkana/1.jpg"
+                alt="1"
+                class="relative block mb-6"
+              />
+
+              <img
+                src="../assets/img/galeria/gynkana/5.jpg"
+                alt="2"
+                class="relative block mb-6"
+              />
+            </div>
+            <div
+              class="flex-grow flex-shrink block md:mr-6"
+              style="flex-basis: 0"
+            >
+              <img
+                src="../assets/img/galeria/gynkana/2.jpg"
+                alt="1"
+                class="relative block mb-6"
+              />
+
+              <img
+                src="../assets/img/galeria/gynkana/4.jpg"
+                alt="2"
+                class="relative block h-auto mb-6"
+              />
+            </div>
+            <!-- para añadir imagenes a cada columna hay que ponerlas dentro del div las que se deformen prueba a ponerlas con object-cover w-full -->
+            <div class="flex-grow flex-shrink block" style="flex-basis: 0">
+              <img
+                src="../assets/img/galeria/gynkana/3.jpg"
+                alt="2"
+                class="relative block mb-6"
+              />
+              <img
+                src="../assets/img/galeria/gynkana/6.jpg"
+                alt="2"
+                class="relative block mb-6"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="py-16 bg-white">
+          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+              <h2
+                class="mb-2 text-3xl font-medium leading-8 tracking-tight text-gray-900 sm:text-4xl"
+              >
+                Semana Cultural
+              </h2>
+              <p
+                class="text-base font-semibold tracking-wide text-green-600 uppercase"
+              >
+                Galería
+              </p>
+              <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
+                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
+                magnam voluptatum cupiditate veritatis in accusamus quisquam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container block mx-auto mt-20">
+          <div class="relative flex flex-col w-full md:flex-row">
+            <!-- un flex con tres columnas (cada columna es div de los de abajo) -->
+            <div
+              class="flex-grow flex-shrink block md:mr-6 tw-scale-y:1 ;"
+              style="flex-basis: 0"
+            >
+              <img
+                src="../assets/img/galeria/semanaCultural/foto(1).jpg"
+                alt="1"
+                class="relative block mb-6 flex.grow"
+              />
+              <img
+                src="../assets/img/galeria/semanaCultural/foto(2).jpg"
+                alt="1"
+                class="relative block mb-6"
+              />
+            </div>
+            <div
+              class="flex-grow flex-shrink block md:mr-6 tw-scale-y:1 ;"
+              style="flex-basis: 0"
+            >
+              <img
+                src="../assets/img/galeria/semanaCultural/foto(3).jpg"
+                alt="1"
+                class="relative block mb-6 flex.grow"
+              />
+              <img
+                src="../assets/img/galeria/semanaCultural/foto(4).jpg"
+                alt="1"
+                class="relative block mb-6"
+              />
+            </div>
+            <!-- para añadir imagenes a cada columna hay que ponerlas dentro del div las que se deformen prueba a ponerlas con object-cover w-full -->
+            <div class="flex-grow flex-shrink block" style="flex-basis: 0">
+              <img
+                src="../assets/img/galeria/semanaCultural/foto(7).jpg"
+                alt="2"
+                class="relative block mb-6"
+              />
+              <img
+                src="../assets/img/galeria/semanaCultural/foto(6).jpg"
+                alt="2"
+                class="relative block mb-6"
+              />
+              <img
+                src="../assets/img/galeria/semanaCultural/foto(5).jpg"
+                alt="2"
+                class="relative block mb-6"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="py-16 bg-white">
+          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+              <h2
+                class="mb-2 text-3xl font-medium leading-8 tracking-tight text-gray-900 sm:text-4xl"
+              >
+                Memoria De La Jornada Stop CO2
+              </h2>
+              <p
+                class="text-base font-semibold tracking-wide text-green-600 uppercase"
+              >
+                Galería
+              </p>
+              <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
+                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
+                magnam voluptatum cupiditate veritatis in accusamus quisquam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container mx-auto">
+          <iframe
+            src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=h9fof5i1ci"
+          ></iframe>
+        </div>
+      </article>
+    </section>
+
+    <footer class="mt-20 bg-gray-300" aria-labelledby="footerHeading">
+      <h2 id="footerHeading" class="sr-only">Footer</h2>
+      <div class="px-4 py-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div class="space-y-4 xl:col-span-1">
+            <img
+              class="w-2/3"
+              src="../assets/img/cuatrovientos/logo.png"
+              alt="Company name"
+            />
+
+            <p class="text-base text-gray-500">
+              Síguenos en nuestras redes sociales.
+            </p>
+            <div class="flex space-x-6">
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Facebook</span>
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Instagram</span>
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Twitter</span>
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <p class="text-base text-gray-500">Proyecto financiado por:</p>
+              <a href="" target="">
+                <img
+                  class="w-36"
+                  src="../assets/img/cuatrovientos/erasmus.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3
+                  class="text-sm font-semibold tracking-wider text-gray-400 uppercase"
+                >
+                  Solutions
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Marketing
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Analytics
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Commerce
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Insights
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h3
+                  class="text-sm font-semibold tracking-wider text-gray-400 uppercase"
+                >
+                  Support
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Pricing
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Documentation
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Guides
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      API Status
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3
+                  class="text-sm font-semibold tracking-wider text-gray-400 uppercase"
+                >
+                  Company
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      About
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Blog
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Jobs
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Press
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Partners
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h3
+                  class="text-sm font-semibold tracking-wider text-gray-400 uppercase"
+                >
+                  Legal
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Claim
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Privacy
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Terms
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-8 mt-12 border-t border-gray-200">
+          <p class="text-base text-gray-400 xl:text-center">
+            © 2021 CI Cuatrovientos.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

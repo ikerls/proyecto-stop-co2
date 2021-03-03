@@ -9,223 +9,23 @@
     <link href="https://unpkg.com/pattern.css" rel="stylesheet" />
   </head>
   <body class="antialiased">
-
-    <div class="container fixed z-50 justify-center min-w-full">
-      <nav x-data="{ open: false }" class="bg-white shadow">
-        <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div class="relative flex justify-between h-16">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <!-- Mobile menu button -->
-              <button id="boton">
-                <span class="sr-only">Open main menu</span>
-                <!-- Icon when menu is closed. -->
-                <svg
-                  class="block w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  ></path>
-                </svg>
-                <!-- Icon when menu is open. -->
-                <svg
-                  class="hidden w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-            <div
-              class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start"
-            >
-              <div class="flex items-center flex-shrink-0">
-                <img
-                  class="block w-auto h-8 lg:hidden"
-                  src="../assets/img/cuatrovientos/Recurso2.png"
-                  alt="Workflow"
-                />
-                <img
-                  class="hidden w-auto h-8 lg:block"
-                  src="../assets/img/cuatrovientos/Recurso2.png"
-                  alt="Workflow"
-                />
-              </div>
-              <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-                <a
-                  href="#"
-                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800"
-                >
-                  Inicio
-                </a>
-                <a
-                  href="#"
-                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800"
-                >
-                  El Proyecto
-                </a>
-                <a
-                  href="#"
-                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800"
-                >
-                  Redes Sociales
-                </a>
-                <a
-                  href="#"
-                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800"
-                >
-                  Contacto
-                </a>
-              </div>
-            </div>
-            <div
-              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
-            >
-              <button
-                class="p-1 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800"
-              >
-                <span class="sr-only">View notifications</span>
-                <svg
-                  class="w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </button>
-
-              <!-- Profile dropdown -->
-              <!-- <div
-                @click.away="open = false"
-                class="relative ml-3"
-                x-data="{ open: false }"
-              >
-                <div>
-                  <button
-                    @click="open = !open"
-                    class="flex text-sm bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                    id="user-menu"
-                    aria-haspopup="true"
-                    x-bind:aria-expanded="open"
-                  >
-                    <span class="sr-only">Open user menu</span>
-                    <img
-                      class="w-8 h-8 rounded-full"
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <transition
-                  enter-active-class="transition duration-200 ease-out"
-                  enter-class="transform scale-95 opacity-0"
-                  enter-to-class="transform scale-100 opacity-100"
-                  leave-active-class="transition duration-75 ease-in"
-                  leave-class="transform scale-100 opacity-100"
-                  leave-to-class="transform scale-95 opacity-0"
-                  ><div
-                    x-show="open"
-                    x-description="Profile dropdown panel, show/hide based on dropdown state."
-                    class="absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5"
-                    role="menu"
-                    aria-orientation="vertical"
-                    aria-labelledby="user-menu"
-                  >
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      role="menuitem"
-                      >Your Profile</a
-                    >
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      role="menuitem"
-                      >Settings</a
-                    >
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      role="menuitem"
-                      >Sign out</a
-                    >
-                  </div></transition
-                >
-              </div> -->
-            </div>
-          </div>
-        </div>
-
-        <div class="hidden sm:hidden" id="menu">
-          <div class="pt-2 pb-4 space-y-1">
-            <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-            <a
-              href="#"
-              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-800 border-l-4 focus:border-green-800 focus:bg-green-50 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
-              >Inicio</a
-            >
-            <a
-              href="#"
-              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 focus:border-green-800 focus:bg-green-50"
-              >El proyecto</a
-            >
-            <a
-              href="#"
-              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 focus:border-green-800 focus:bg-green-50"
-              >Redes Sociales</a
-            >
-            <a
-              href="#"
-              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 focus:border-green-800 focus:bg-green-50"
-              >Contacto</a
-            >
-          </div>
-        </div>
-      </nav>
-    </div>
-    <script src="../prueba.js"></script>
-
     <section class="py-12 overflow-hidden md:py-20 lg:py-24">
       <div
         class="container mx-auto bg-cover shadow-lg md:rounded-lg md:bg-fixed pt-11 pb-11"
-        style="background-image: url(../assets/img/imgfondo/5.jpg)"
+        style="background-image: url(../assets/img/cuatrovientos/bosquew.jpg)"
       >
         <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div class="relative">
             <img
               class="h-20 mx-auto"
-              src="../assets/img/cuatrovientos/Recurso2.png"
+              src="../assets/img/cuatrovientos/Recurso1.svg"
               alt="Workcation"
             />
             <p class="mt-10">
               <div
-                class="max-w-3xl mx-auto text-2xl  font-medium leading-9 text-center text-gray-900"
+                class="max-w-3xl mx-auto text-2xl font-medium leading-9 text-center text-gray-900"
               >
-                <p class="text-white">
+                <p>
                   “Proponemos un Proyecto Educativo a largo plazo que debe
                   empezar a desarrollarse cuanto antes, dando prioridad a las
                   acciones más concretas y cercanas, ajustándose a las
@@ -385,19 +185,19 @@
     <section class="py-12 overflow-hidden md:py-20 lg:py-24">
       <div
         class="container mx-auto bg-cover shadow-lg md:rounded-lg md:bg-fixed pt-11 pb-11"
-        style="background-image: url(../assets/img/imgfondo/5.jpg)"
+        style="background-image: url(../assets/img/cuatrovientos/bosquew.jpg)"
       >
         <div class="relative">
           <img
             class="h-20 mx-auto"
-            src="../assets/img/cuatrovientos/Recurso2.png"
+            src="../assets/img/cuatrovientos/Recurso1.svg"
             alt="Workcation"
           />
           <p class="mt-10">
             <div
               class="max-w-3xl mx-auto text-2xl font-medium leading-9 text-center text-gray-900"
             >
-              <p class="text-white">
+              <p>
                 “Proponemos la participación de la comunidad educativa, a través
                 de procesos y metodologías activas que desarrollen la reflexión,
                 colaboración y responsabilidad que, junto con el asesoramiento
@@ -739,19 +539,19 @@
     <section class="py-12 overflow-hidden md:py-20 lg:py-24">
       <div
         class="container mx-auto bg-cover shadow-lg md:rounded-lg md:bg-fixed pt-11 pb-11"
-        style="background-image: url(../assets/img/imgfondo/5.jpg)"
+        style="background-image: url(../assets/img/cuatrovientos/bosquew.jpg)"
       >
         <div class="relative">
           <img
             class="h-20 mx-auto"
-            src="../assets/img/cuatrovientos/Recurso2.png"
+            src="../assets/img/cuatrovientos/Recurso1.svg"
             alt="Workcation"
           />
           <p class="mt-10">
             <div
               class="max-w-3xl mx-auto text-2xl font-medium leading-9 text-center text-gray-900"
             >
-              <p class="text-white">
+              <p>
                 “Apostamos por desarrollar el pensamiento crítico para el
                 análisis de la realidad que nos permita reducir y repensar las
                 decisiones que tienen que ver con el consumo, para alargar la
@@ -765,84 +565,23 @@
       </div>
     </section>
 
-    <!-- añadir un titulo estilo el de la pagina principal (stopCO2 CFTrain in VET) para separar las dos secciones -->
-    <!-- seccion: productos -->
-
-    <section class="container pt-16 mx-auto">
-      <!-- la galeria es un poco trambolica -->
-
-      <div class="flex flex-col grid-cols-8 grid-rows-4 gap-4 md:grid">
-        <div class="flex row-span-2 md:col-span-3">
-          <img
-            src="../assets/img/cuatrovientos1.jpg"
-            alt="1"
-            class="object-cover w-full h-full"
-          />
+    <div class="py-4 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="mb-2 text-3xl leading-8 font-medium tracking-tight text-gray-900 sm:text-4xl">
+            Seccion: Jornada Stop Co2
+          </h2>
+          <p class="text-base text-green-600 font-semibold tracking-wide uppercase">Galeria</p>
+          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+          </p>
         </div>
-        <div class="flex row-span-2 md:col-span-3">
-          <img
-            src="../assets/img/cuatrovientos1.jpg"
-            alt="1"
-            class="object-cover w-full h-full"
-          />
-        </div>
-        <div class="flex row-span-2 md:col-span-2">
-          <img
-            src="../assets/img/cuatrovientos1.jpg"
-            alt="1"
-            class="object-cover w-full h-full"
-          />
-        </div>
-        <div class="flex row-span-2 md:col-span-2">
-          <img
-            src="../assets/img/cuatrovientos1.jpg"
-            alt="1"
-            class="object-cover w-full h-full"
-          />
-        </div>
-        <div class="flex row-span-2 md:col-span-2">
-          <img
-            src="../assets/img/cuatrovientos1.jpg"
-            alt="1"
-            class="object-cover w-full h-full"
-          />
-        </div>
-        <div class="flex row-span-2 md:col-span-2">
-          <img
-            src="../assets/img/cuatrovientos1.jpg"
-            alt="1"
-            class="object-cover w-full h-full"
-          />
-        </div>
-      </div>
-    </section>
-
     <section class="container block mx-auto mt-20">
       <div class="relative flex flex-col w-full md:flex-row">
         <!-- un flex con tres columnas (cada columna es div de los de abajo) -->
         <div class="flex-grow flex-shrink block md:mr-6" style="flex-basis: 0">
           <img
-            src="../assets/img/cuatrovientos1.jpg"
-            alt="1"
-            class="relative block mb-6"
-          />
-          <img
-            src="../assets/img/prueba.jpeg"
-            alt="1"
-            class="relative block object-cover w-full mb-6"
-          />
-          <img
-            src="../assets/img/cuatrovientos1.jpg"
-            alt="1"
-            class="relative block mb-6"
-          />
-          <img
-            src="../assets/img/cuatrovientos1.jpg"
-            alt="1"
-            class="relative block mb-6"
-          />
-          <img
-            src="../assets/img/cuatrovientos1.jpg"
+            src="../assets/img/Jornada Stop Co2/1.jpg"
             alt="1"
             class="relative block mb-6"
           />
@@ -850,136 +589,103 @@
         <!-- para añadir imagenes a cada columna hay que ponerlas dentro del div las que se deformen prueba a ponerlas con object-cover w-full -->
         <div class="flex-grow flex-shrink block md:mr-6" style="flex-basis: 0">
           <img
-            src="../assets/img/prepa.jpg"
-            alt="2"
-            class="relative block mb-6"
-          />
-          <img
-            src="../assets/img/prepa.jpg"
-            alt="2"
-            class="relative block mb-6"
-          />
-          <img
-            src="../assets/img/prepa.jpg"
-            alt="2"
-            class="relative block mb-6"
-          />
-          <img
-            src="../assets/img/prueba.jpeg"
-            alt="1"
-            class="relative block object-cover w-full mb-6"
-          />
-          <img
-            src="../assets/img/prepa.jpg"
+          src="../assets/img/Jornada Stop Co2/3.jpg"
             alt="2"
             class="relative block mb-6"
           />
         </div>
-        <div class="flex-grow flex-shrink block" style="flex-basis: 0">
+      </div>
+      <div class="flex-row md:mr-6" style="flex-basis: 0">
+        <img
+        src="../assets/img/Jornada Stop Co2/4.jpg"
+          alt="2"
+          class="relative block mb-6"
+        />
+      </div>
+    </section>
+    <div class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="mb-2 text-3xl leading-8 font-medium tracking-tight text-gray-900 sm:text-4xl">
+            Seccion: GYMKANA SENSIBILIZACIÓN
+          </h2>
+          <p class="text-base text-green-600 font-semibold tracking-wide uppercase">Galeria</p>
+          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+          </p>
+        </div>
+    <section class="container block max-auto mt-20">
+      <div class="relative flex flex-col w-full md:flex-row">
+        <!-- un flex con dos columnas (cada columna es div de los de abajo) -->
+        <div class="flex-grow flex-shrink block md:mr-6" style="flex-basis: 0">
           <img
-            src="../assets/img/procud.jpg"
+            src="../assets/img/GYMKANA/1.JPG"
+            alt="1"
+            class="relative block mb-6"
+          />
+          <img
+          src="../assets/img/GYMKANA/2.JPG"
+            alt="1"
+            class="relative block mb-6"
+          />
+        </div>
+        <!-- para añadir imagenes a cada columna hay que ponerlas dentro del div las que se deformen prueba a ponerlas con object-cover w-full -->
+        <div class="flex-grow flex-shrink block md:mr-6" style="flex-basis: 0">
+          <img
+          src="../assets/img/GYMKANA/3.JPG"
             alt="2"
             class="relative block mb-6"
           />
           <img
-            src="../assets/img/team-1-800x800.jpg"
-            alt="2"
-            class="relative block mb-6"
-          />
-          <img
-            src="../assets/img/procud.jpg"
-            alt="2"
-            class="relative block mb-6"
-          />
-          <img
-            src="../assets/img/team-1-800x800.jpg"
-            alt="2"
-            class="relative block mb-6"
-          />
-          <img
-            src="../assets/img/procud.jpg"
+          src="../assets/img/GYMKANA/4.JPG"
             alt="2"
             class="relative block mb-6"
           />
         </div>
       </div>
     </section>
-
-<!-- FOOTER -->
-
-<footer id="footer">
-  <link rel="stylesheet" href="../1/assets/css/main.css" />
-    <a href="#" class="info fa fa-info-circle"><span>About</span></a>
-    <div class="inner">
-      <div class="content">
-        
-        <h3>STOP CO2 - CF Train in VET </h3>
-        <h3>CUATROVIENTOS CENTRO INTEGRADO</h3>
-        <img id="cvci" height="50%" width="50%" src="http://cuatrov1-cp5028.wordpresstemporal.com/wp-content/uploads/2019/07/logo-cuatrovientos-2-1.png" alt="Cuatrovientos" title="" style="max-height: 58px;">
-
-        
-        
-      </div>
-      
-      <br>
-      <div class="flex_column av_one_fourth  flex_column_div av-zero-column-padding   avia-builder-el-9  el_after_av_one_fourth  el_before_av_one_fourth  " style="border-radius:0px; "><section class="av_textblock_section " itemscope="itemscope" itemtype="https://schema.org/CreativeWork"><div class="avia_textblock  av_inherit_color " style="font-size:13px; color:#005a87; " itemprop="text"><p><strong>CENTRO INTEGRADO CUATROVIENTOS</strong><br>
-        Tel: (34) 948 12 41 29<br>
-        info@cuatrovientos.org</p>
-        <p><strong>CUATROVIENTOS IDIOMAS</strong><br>
-        Tel: (34) 948 31 55 58<br>
-        idiomas@cuatrovientos.org</p>
-        <p><strong>CUATROVIENTOS TECNOLÓGICO Y VUE</strong><br>
-        Tel: (34) 848 46 33 03<br>
-        certificaciones@cuatrovientos.org</p>
-        </div></section></div>
-      
-        
-<ul class="noLightbox social_bookmarks icon_count_6"><li class="social_bookmarks_facebook av-social-link-facebook social_icon_1"><a target="_blank" aria-label="Link to Facebook" href="https://www.facebook.com/cipcuatrovientos/" aria-hidden="false" data-av_icon="" data-av_iconfont="entypo-fontello" title="Facebook" rel="noopener noreferrer"><span class="avia_hidden_link_text">Facebook</span></a></li><li class="social_bookmarks_twitter av-social-link-twitter social_icon_2"><a target="_blank" aria-label="Link to Twitter" href="https://twitter.com/_cuatrovientos" aria-hidden="false" data-av_icon="" data-av_iconfont="entypo-fontello" title="Twitter" rel="noopener noreferrer"><span class="avia_hidden_link_text">Twitter</span></a></li><li class="social_bookmarks_youtube av-social-link-youtube social_icon_3"><a target="_blank" aria-label="Link to Youtube" href="https://www.youtube.com/user/alviento" aria-hidden="false" data-av_icon="" data-av_iconfont="entypo-fontello" title="Youtube" rel="noopener noreferrer"><span class="avia_hidden_link_text">Youtube</span></a></li><li class="social_bookmarks_linkedin av-social-link-linkedin social_icon_4"><a target="_blank" aria-label="Link to LinkedIn" href="https://www.linkedin.com/in/artean-cuatrovientos-cuatrovientos-scoop-57434883/" aria-hidden="false" data-av_icon="" data-av_iconfont="entypo-fontello" title="LinkedIn" rel="noopener noreferrer"><span class="avia_hidden_link_text">LinkedIn</span></a></li><li class="social_bookmarks_rss av-social-link-rss social_icon_5"><a target="_blank" aria-label="Link to Rss" href="http://alviento.cuatrovientos.org/" aria-hidden="false" data-av_icon="" data-av_iconfont="entypo-fontello" title="Rss" rel="noopener noreferrer"><span class="avia_hidden_link_text">Rss</span></a></li><li class="social_bookmarks_instagram av-social-link-instagram social_icon_6"><a target="_blank" aria-label="Link to Instagram" href="https://www.instagram.com/cipcuatrovientos/?hl=es" aria-hidden="false" data-av_icon="" data-av_iconfont="entypo-fontello" title="Instagram" rel="noopener noreferrer"><span class="avia_hidden_link_text">Instagram</span></a></li></ul>
-
-        
-              <div class="copyright">
-
-                <div class="avia3-menu">
-                <ul id="avia3-menu" class="menu"><li id="menu-item-3950" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-1"><a href="http://www.cuatrovientos.org/aviso-legal/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Aviso legal</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
-                  <li id="menu-item-3949" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-2">
-                  <a href="http://www.cuatrovientos.org/politica-de-cookies/" itemprop="url">
-                  <span class="avia-bullet"></span>
-                  <span class="avia-menu-text">Política de cookies</span>
-                  <span class="avia-menu-fx">
-                  <span class="avia-arrow-wrap">
-                  <span class="avia-arrow">
-                  </span></span></span></a></li>
-                  <li id="menu-item-3951" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-top-level menu-item-top-level-3">
-                   <a href="http://www.cuatrovientos.org/politica-privacidad/" itemprop="url">
-                     <span class="avia-bullet"></span>
-                      <span class="avia-menu-text">Política de privacidad</span>
-                     <span class="avia-menu-fx">
-                        <span class="avia-arrow-wrap">
-                         <span class="avia-arrow"></span>
-                        </span>
-                      </span>
-                     </a>
-                  </li>
-                </ul>
-
-                </div>
-        &copy; Copyright -  
-        <a target="_back" href="http://www.cuatrovientos.org/">Cuatrovientos Centro Integrado</a>
-      </div>
-    </div>
-</footer>
-
-<script src="../1/assets/js/jquery.min.js"></script>
-<script src="../1/assets/js/skel.min.js"></script>
-<script src="../1/assets/js/util.js"></script>
-<script src="../1/assets/js/main.js"></script>
-
-
-<!-- Fin de Footer-->
-
-
-
+    <div class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="mb-2 text-3xl leading-8 font-medium tracking-tight text-gray-900 sm:text-4xl">
+            Seccion: Art Recycles
+          </h2>
+          <p class="text-base text-green-600 font-semibold tracking-wide uppercase">Galeria</p>
+          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+          </p>
+        </div>
+        <section class="container block mx-auto mt-20">
+          <div class="relative flex flex-col w-full md:flex-row">
+            <!-- un flex con tres columnas (cada columna es div de los de abajo) -->
+            <div class="flex-grow flex-shrink block md:mr-6 tw-scale-y:1 ;" style="flex-basis: 0">
+              <img
+                src="../assets/img/Seccion Art Reycles/1.JPG"
+                alt="1"
+                class="relative block mb-6 flex.grow"
+                
+              />
+              <img
+              src="../assets/img/Seccion Art Reycles/2.JPG"
+                alt="1"
+                class="relative block mb-6"
+              />
+            </div>
+            <!-- para añadir imagenes a cada columna hay que ponerlas dentro del div las que se deformen prueba a ponerlas con object-cover w-full -->
+            <div class="flex-grow flex-shrink block md:mr-6" style="flex-basis: 0">
+              <img
+              src="../assets/img/Seccion Art Reycles/3.JPG"
+                alt="2"
+                class="relative block mb-6"
+              />
+              <img
+              src="../assets/img/Seccion Art Reycles/4.JPG"
+                alt="2"
+                class="relative block mb-6"
+              />
+            </div>
+    
+          </div>
+        </section>
   </body>
-
-
 </html>
