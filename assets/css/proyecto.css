@@ -13,6 +13,12 @@ iframe {
 .colorVerde {
   color: #216869;
 }
+.fondoVerde2 {
+  background-color: #9cc5a1;
+}
 html {
   scroll-behavior: smooth;
+}
+.imgFondo {
+  background-image: url(../img/imgfondo/5.jpg);
 }
