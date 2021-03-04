@@ -22,3 +22,6 @@ html {
 .imgFondo {
   background-image: url(../img/imgfondo/5.jpg);
 }
+.fBasis{
+  flex-basis: 0;
+}
