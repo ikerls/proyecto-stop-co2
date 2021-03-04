@@ -2,11 +2,12 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="shortcut icon"
+      href="../assets/img/cuatrovientos/Recurso1.svg"
+      type="image/x-icon"
     />
     <link rel="stylesheet" href="../assets/cssSinPurgar/main.css" />
     <link rel="stylesheet" href="../assets/css/landing.css" />
@@ -131,7 +132,6 @@
             </div>
           </div>
         </div>
-
         <div class="hidden sm:hidden" id="menu">
           <div class="pt-2 pb-4 space-y-1">
             <a
@@ -196,7 +196,6 @@
           </div>
         </div>
       </section>
-
       <section class="items-center h-auto fondoVerde" id="Resumen">
         <div
           class="container justify-center px-4 py-16 mx-auto sm:py-20 sm:px-6 lg:px-8"
@@ -222,8 +221,7 @@
           </div>
         </div>
       </section>
-
-      <!-- timeline -->
+      <!-- timeline - fases del proyecto -->
       <section class="container mx-auto">
         <div class="flex flex-col grid-cols-9 mx-auto md:grid">
           <!-- card left -->
@@ -390,7 +388,6 @@
           </div>
         </div>
       </section>
-
       <!-- Socios -->
       <section class="block fondoVerde" id="Socios">
         <div class="container px-4 pt-24 pb-24 mx-auto">
@@ -417,52 +414,67 @@
             ></iframe>
           </div>
           <div class="bg-white rounded-lg shadow-lg mt-11">
-            <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="px-4 py-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                 <div
                   class="flex justify-center col-span-1 md:col-span-2 lg:col-span-1"
                 >
-                  <img
-                    class="w-12 h-12"
-                    src="../assets/img/socios/Imagen2.png"
-                    alt="Tuple"
-                  />
+                  <a
+                    href="https://www.htl-wolfsberg.at/htl/index.php/de/"
+                    target="_blank"
+                  >
+                    <img
+                      id="tamañosocio"
+                      src="../assets/img/socios/Imagen2.png"
+                      alt="htl-wolfsberg logo"
+                    />
+                  </a>
                 </div>
                 <div
                   class="flex justify-center col-span-1 md:col-span-2 lg:col-span-1"
                 >
-                  <img
-                    class="h-12"
-                    src="../assets/img/socios/sa.png"
-                    alt="Mirage"
-                  />
+                  <a href="" target="_blank" id="tamañosocio2">
+                    <img
+                      src="../assets/img/socios/sa.png"
+                      alt="logo de sandvik"
+                    />
+                  </a>
                 </div>
                 <div
                   class="flex justify-center col-span-1 md:col-span-2 lg:col-span-1"
                 >
-                  <img
-                    class="h-12"
-                    src="../assets/img/socios/Imagen4.png"
-                    alt="StaticKit"
-                  />
+                  <a
+                    href="http://www.tfobz.it/"
+                    target="_blank"
+                    id="tamañosocio3"
+                  >
+                    <img
+                      src="../assets/img/socios/Imagen4.png"
+                      alt="logo de tfobz "
+                    />
+                  </a>
                 </div>
                 <div
                   class="flex justify-center col-span-1 md:col-span-3 lg:col-span-1"
                 >
-                  <img
-                    class="h-12"
-                    src="../assets/img/socios/Imagen5.png"
-                    alt="Transistor"
-                  />
+                  <a href="https://www.cenifer.com" target="_blank">
+                    <img
+                      id="tamañosocio4"
+                      src="../assets/img/socios/Imagen5.png"
+                      alt="logo de cenifer "
+                    />
+                  </a>
                 </div>
                 <div
                   class="flex justify-center col-span-2 md:col-span-3 lg:col-span-1"
                 >
-                  <img
-                    class="h-12"
-                    src="../assets/img/socios/Imagen6.jpg"
-                    alt="Workcation"
-                  />
+                  <a href="https://stenum.com/?lang=en" target="_blank">
+                    <img
+                      id="tamañosocio5"
+                      src="../assets/img/socios/Imagen6.jpg"
+                      alt="logo de stenum"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -498,7 +510,6 @@
               <i class="fab fa-twitter-square fa-7x"></i>
             </a>
           </div>
-
           <div class="flex flex-wrap justify-center">
             <form
               class="w-full max-w-lg p-16 text-left bg-gray-100 shadow-2xl rounded-2xl"
@@ -571,8 +582,7 @@
         </div>
       </section>
     </main>
-
-    <footer class="py-6 bg-gray-200 text-coolGray-900">
+    <footer class="py-6 mt-24 bg-gray-200 text-coolGray-900">
       <div
         class="container px-6 mx-auto space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50"
       >
@@ -582,7 +592,7 @@
               <div
                 class="flex items-center justify-center h-24 rounded-full w-55 bg-emerald-600"
               >
-                <a href="">
+                <a href="http://www.cuatrovientos.org/">
                   <img
                     src="../assets/img/cuatrovientos/logo.png"
                     alt="logo de cuatrovientos"
@@ -595,7 +605,10 @@
               <div
                 class="flex items-center justify-center w-32 rounded-full bg-emerald-600"
               >
-                <a href="">
+                <a
+                  href="https://ec.europa.eu/programmes/erasmus-plus/node_es"
+                  target="_blank"
+                >
                   <img
                     src="../assets/img/cuatrovientos/erasmus.png"
                     alt="logo de erasmus plus"
@@ -604,9 +617,9 @@
               </div>
             </div>
           </div>
-
-          <div class="col-span-6 text-center md:text-left md:col-span-3"></div>
-          <div class="col-span-6 text-center md:text-left md:col-span-3">
+          <div
+            class="text-center col-span-full md:col-start-10 md:text-left md:col-span-6"
+          >
             <p class="pb-1 text-lg font-medium">Contacto:</p>
             <ul>
               <li>CENTRO INTEGRADO CUATROVIENTOS</li>
@@ -625,17 +638,15 @@
             <a href="https://www.cuatrovientos.org/politica-privacidad/">
               <span>Política de Privacidad</span>
             </a>
-            <a
-              href="https://www.cuatrovientos.org/politica-de-cookies/"
-              target="_blank"
-            >
+            <a href="https://www.cuatrovientos.org/politica-de-cookies/">
               <span>Política de cookies</span>
             </a>
           </div>
           <div class="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
             <a
-              href="#"
+              href="https://www.instagram.com/cipcuatrovientos/?hl=es"
               class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-600 text-coolGray-50"
+              target="_blank"
             >
               <svg
                 class="w-6 h-6"
@@ -651,8 +662,9 @@
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/cipcuatrovientos/"
               class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-600 text-coolGray-50"
+              target="_blank"
             >
               <svg
                 class="w-6 h-6"
@@ -668,8 +680,9 @@
               </svg>
             </a>
             <a
-              href="#"
+              href="https://twitter.com/_cuatrovientos"
               class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-600 text-coolGray-50"
+              target="_blank"
             >
               <svg
                 class="w-6 h-6"
