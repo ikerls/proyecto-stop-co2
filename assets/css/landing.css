@@ -40,3 +40,30 @@ h4 :first-child {
 .colorVerde {
   color: #216869;
 }
+.tamañosocio {
+  height: 75%;
+  margin-top: 12%;
+}
+.tamañosocio2 {
+  height: 60%;
+  width: 100%;
+  margin-top: 15%;
+}
+.tamañosocio3{
+  height: 65%;
+  width: 67%;
+  margin-top: 10%;
+}
+.tamañosocio4{
+  height: 65%;
+  width: 100%;
+  margin-top: 15%;
+  margin-right: 10%;
+}
+.tamañosocio5{
+  height: 25%;
+  width: 100%;
+  margin-top: 30%;
+}
+
+
