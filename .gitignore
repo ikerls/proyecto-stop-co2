@@ -1,2 +1,3 @@
 assets/vendor/
-assets/tailwindcss/node_modules
+assets/tailwindcss
+assets/cssSinPurgar
