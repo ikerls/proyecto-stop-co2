@@ -22,10 +22,10 @@ html {
 .imgFondo {
   background-image: url(../img/imgfondo/5.jpg);
 }
-.fBasis{
+.fBasis {
   flex-basis: 0;
 }
-.link{
+.link {
   text-decoration: underline;
   color: #216869;
   font-weight: bold;
