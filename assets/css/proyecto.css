@@ -33,3 +33,7 @@ html {
   color: #216869;
   font-weight: bold;
 }
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
