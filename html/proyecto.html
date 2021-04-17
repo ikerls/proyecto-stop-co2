@@ -16,6 +16,12 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../assets/css/proyecto.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+
     <meta
       name="description"
       content="
@@ -934,34 +940,44 @@
         >
           Galería
         </h2>
-        <!--<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            new Splide("#image-slider").mount();
-          });
-        </script>
-        <div id="image-slider" class="splide">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <img src="../assets/img/galeria/arboles/1.jpg" />
-              </li>
-              <li class="splide__slide">
-                <img src="../assets/img/galeria/arboles/2.jpg" />
-              </li>
-              <li class="splide__slide">
-                <img src="../assets/img/galeria/arboles/3.jpg" />
-              </li>
-            </ul>
+        <div class="container">
+          <script src="../js/slider.js"></script>
+          <div id="image-slider" class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <button id="btnG" class="">
+                    <img src="../assets/img/galeria/arboles/1.jpg" />
+                  </button>
+                </li>
+                <li class="splide__slide">
+                  <button id="btnJornada">
+                    <img src="../assets/img/galeria/arboles/2.jpg" />
+                  </button>
+                </li>
+                <li class="splide__slide">
+                  <button id="btnS">
+                    <img src="../assets/img/galeria/arboles/3.jpg" />
+                  </button>
+                </li>
+                <li class="splide__slide">
+                  <button id="btnF">
+                    <img src="../assets/img/galeria/arboles/3.jpg" />
+                  </button>
+                </li>
+                <li class="splide__slide">
+                  <button id="btnA" class="bg-red-500">
+                    <img src="../assets/img/galeria/arboles/3.jpg" />
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
--->
+
         <p>Provisional</p>
-        <button id="btnG" class="mx-10 bg-red-500">Gymkana</button>
-        <button id="btnJornada" class="bg-red-500">Jornada StopC02</button>
-        <button id="btnS" class="bg-red-500">Semana Cultural</button>
-        <button id="btnF" class="bg-red-500">Fouroneshop</button>
-        <button id="btnA" class="bg-red-500">árboles</button>
+
+        <div></div>
 
         <!--! Titulo de la galeria-->
         <div class="py-16 bg-white">
