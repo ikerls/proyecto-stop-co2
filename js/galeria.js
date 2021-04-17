@@ -11,6 +11,8 @@ var infoJornada = document.getElementById("infoJornada");
 var infoSemana = document.getElementById("infoSemana");
 var infoRopa = document.getElementById("infoRopa");
 var infoArbol = document.getElementById("infoArbol");
+var menoriaJornada = document.getElementById("menoriaJornada");
+var documento = menoriaJornada.getElementsByTagName("iframe");
 btnG.addEventListener("click", function () {
   filtro("gynkana");
   window.location.href = "#infoGymkana";
@@ -49,11 +51,18 @@ function filtro(c) {
       infoJornada.classList.contains("hidden")
         ? infoJornada.classList.replace("hidden", "block")
         : infoJornada.classList.replace("block", "hidden");
+      menoriaJornada.classList.contains("hidden")
+        ? menoriaJornada.classList.replace("hidden", "block")
+        : menoriaJornada.classList.replace("block", "hidden");
+      documento.item(0).classList.contains("hidden")
+        ? documento.item(0).classList.replace("hidden", "block")
+        : documento.item(0).classList.replace("block", "hidden");
       break;
     case "semanaCultural":
       infoSemana.classList.contains("hidden")
         ? infoSemana.classList.replace("hidden", "block")
         : infoSemana.classList.replace("block", "hidden");
+
       break;
     case "ropaFPB":
       infoRopa.classList.contains("hidden")
