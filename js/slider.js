@@ -1,6 +1,8 @@
-var splide;
 document.addEventListener("DOMContentLoaded", function () {
-  splide = new Splide("#image-slider").mount();
+  new Splide("#image-slider", {
+    cover: true,
+    heightRatio: 0.5,
+  }).mount();
 });
 
 /*splide.on("click", function () {
