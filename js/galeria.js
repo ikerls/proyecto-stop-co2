@@ -13,18 +13,23 @@ var infoRopa = document.getElementById("infoRopa");
 var infoArbol = document.getElementById("infoArbol");
 btnG.addEventListener("click", function () {
   filtro("gynkana");
+  window.location.href = "#infoGymkana";
 });
 btnJ.addEventListener("click", function () {
   filtro("jornadaStop");
+  window.location.href = "#infoJornada";
 });
 btnS.addEventListener("click", function () {
   filtro("semanaCultural");
+  window.location.href = "#infoSemana";
 });
 btnF.addEventListener("click", function () {
   filtro("ropaFPB");
+  window.location.href = "#infoRopa";
 });
 btnA.addEventListener("click", function () {
   filtro("arboles");
+  window.location.href = "#infoArbol";
 });
 
 function filtro(c) {
