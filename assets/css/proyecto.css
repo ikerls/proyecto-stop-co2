@@ -13,6 +13,9 @@ iframe {
 .colorVerde {
   color: #216869;
 }
+.ColorVerde2 {
+  color: hsl(127, 23%, 51%);
+}
 .fondoVerde2 {
   background-color: #9cc5a1;
 }
