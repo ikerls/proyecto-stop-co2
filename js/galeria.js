@@ -1,10 +1,16 @@
-const galeria = document.getElementById("Gal");
-const btnG = document.getElementById("btnG");
-const imagenes = document.querySelectorAll("#Gal .hidden");
-const btnJ = document.getElementById("btnJornada");
-const btnS = document.getElementById("btnS");
-const btnF = document.getElementById("btnF");
-const btnA = document.getElementById("btnA");
+var galeria = document.getElementById("Gal");
+var btnG = document.getElementById("btnG");
+var imagenes = document.querySelectorAll("#Gal .hidden");
+var btnJ = document.getElementById("btnJornada");
+var btnS = document.getElementById("btnS");
+var btnF = document.getElementById("btnF");
+var btnA = document.getElementById("btnA");
+// texto de informacion de cada galeria
+var infoGym = document.getElementById("infoGymkana");
+var infoJornada = document.getElementById("infoJornada");
+var infoSemana = document.getElementById("infoSemana");
+var infoRopa = document.getElementById("infoRopa");
+var infoArbol = document.getElementById("infoArbol");
 btnG.addEventListener("click", function () {
   filtro("gynkana");
 });
@@ -27,6 +33,35 @@ function filtro(c) {
     if (imagenes[i].classList.contains("block")) {
       imagenes[i].classList.replace("block", "hidden");
     }
+  }
+  switch (c) {
+    case "gynkana":
+      infoGym.classList.contains("hidden")
+        ? infoGym.classList.replace("hidden", "block")
+        : infoGym.classList.replace("block", "hidden");
+      break;
+    case "jornadaStop":
+      infoJornada.classList.contains("hidden")
+        ? infoJornada.classList.replace("hidden", "block")
+        : infoJornada.classList.replace("block", "hidden");
+      break;
+    case "semanaCultural":
+      infoSemana.classList.contains("hidden")
+        ? infoSemana.classList.replace("hidden", "block")
+        : infoSemana.classList.replace("block", "hidden");
+      break;
+    case "ropaFPB":
+      infoRopa.classList.contains("hidden")
+        ? infoRopa.classList.replace("hidden", "block")
+        : infoRopa.classList.replace("block", "hidden");
+      break;
+    case "arboles":
+      infoArbol.classList.contains("hidden")
+        ? infoArbol.classList.replace("hidden", "block")
+        : infoArbol.classList.replace("block", "hidden");
+      break;
+    default:
+      break;
   }
   for (let i = 0; i < imagenes.length; i++) {
     if (imagenes[i].alt === c) {
