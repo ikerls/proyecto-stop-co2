@@ -5,7 +5,7 @@ var btnJ = document.getElementById("btnJornada");
 var btnS = document.getElementById("btnS");
 var btnF = document.getElementById("btnF");
 var btnA = document.getElementById("btnA");
-// texto de informacion de cada galeria
+// texto de información de cada galería
 var infoGym = document.getElementById("infoGymkana");
 var infoJornada = document.getElementById("infoJornada");
 var infoSemana = document.getElementById("infoSemana");
