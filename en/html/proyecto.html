@@ -16,6 +16,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../../assets/css/proyecto.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
     <meta
       name="description"
       content="
@@ -916,374 +921,675 @@
       <div id="Galeria"></div>
       <section
         class="px-4 mx-auto space-y-12 coontainer max-w-7xl sm:px-6 lg:px-8"
+        id="Gal"
       >
+        <!-- ! GALERÍA -->
+        <script src="../../js/slider.js"></script>
         <h2
-          class="mt-20 text-4xl font-semibold tracking-wide text-left uppercase colorVerde"
+          class="mt-22 pt-10 text-4xl font-semibold tracking-wide text-left uppercase colorVerde"
         >
-          Gallery
+          Descubre más sobre <br />
+          las Actividades
         </h2>
-        <article>
-          <div class="py-16 bg-white">
-            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-              <div class="lg:text-center">
-                <h2
-                  class="mb-2 text-3xl font-medium leading-8 tracking-tight text-gray-900 sm:text-4xl"
-                >
-                  Gymkhana of sensibilization
-                </h2>
-                <p
-                  class="text-base font-semibold tracking-wide text-green-600 uppercase"
-                >
-                  Gallery
-                </p>
-                <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
-                  In the days before the Stop CO2 Day, a variety of activities
-                  were organised on social networks and in the centre to
-                  introduce the students to the event and the project.
-                </p>
+        <!--<p class="text-lg">
+          Un repositorio que recoge todo lo conseguido durante el transcurso de
+          cada actividad realizada, imágenes, noticias en la presnsa,
+          entrevistas ...
+        </p>
+        <p class="text-lg">Haz clic y descúbrelo.</p>-->
+
+        <div class="container mx-auto">
+          <div id="image-slider" class="splide">
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="splide__slide">
+                  <div class="relative group w-full h-full">
+                    <img
+                      class="w-full block rounded"
+                      style="object-fit: fill"
+                      src="../../assets/img/galeria/gynkana/2-1.jpg"
+                      alt="fase de preparación"
+                    />
+                    <div
+                      class="absolute top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly"
+                    >
+                      <div
+                        class="flex justify-center flex-col text-white opacity-0 group-hover:opacity-100"
+                      >
+                        <h1 class="text-center text-2xl mb-3">
+                          Gymkana De Sensibilización
+                        </h1>
+                        <button
+                          class="transition transform translate-y-3 hover:scale-110 group-hover:translate-y-0"
+                          id="btnG"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-12 block m-auto"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div class="relative group w-full h-full">
+                    <img
+                      class="w-full block rounded"
+                      style="object-fit: fill"
+                      src="../../assets/img/galeria/jornadaStop/foto(5)2.jpg"
+                      alt="fase de preparación"
+                    />
+                    <div
+                      class="absolute top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly"
+                    >
+                      <div
+                        class="flex justify-center flex-col text-white opacity-0 group-hover:opacity-100"
+                      >
+                        <h1 class="text-center text-2xl mb-3">
+                          Jornada Stop Co2
+                        </h1>
+                        <button
+                          class="transition transform translate-y-3 hover:scale-110 group-hover:translate-y-0"
+                          id="btnJornada"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-12 block m-auto"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div class="relative group w-full h-full">
+                    <img
+                      class="w-full block rounded"
+                      style="object-fit: fill"
+                      src="../../assets/img/galeria/semanaCultural/foto(6).jpg"
+                      alt="fase de preparación"
+                    />
+                    <div
+                      class="absolute top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly"
+                    >
+                      <div
+                        class="flex justify-center flex-col text-white opacity-0 group-hover:opacity-100"
+                      >
+                        <h1 class="text-center text-2xl mb-3">
+                          Semana Cultural
+                        </h1>
+                        <button
+                          class="transition transform translate-y-3 hover:scale-110 group-hover:translate-y-0"
+                          id="btnS"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-12 block m-auto"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div class="relative group w-full h-full">
+                    <img
+                      class="w-full block rounded"
+                      style="object-fit: fill"
+                      src="../../assets/img/galeria/ropaFPB/4.JPG"
+                      alt="fase de preparación"
+                    />
+                    <div
+                      class="absolute top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly"
+                    >
+                      <div
+                        class="flex justify-center flex-col text-white opacity-0 group-hover:opacity-100"
+                      >
+                        <h1 class="text-center text-2xl mb-3">
+                          Semana Cultural: Fouroneshop
+                        </h1>
+                        <button
+                          class="transition transform translate-y-3 hover:scale-110 group-hover:translate-y-0"
+                          id="btnF"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-12 block m-auto"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div class="relative group w-full h-full">
+                    <img
+                      class="w-full block rounded"
+                      style="object-fit: fill"
+                      src="../../assets/img/galeria/arboles/4-1.jpg"
+                      alt="fase de preparación"
+                    />
+                    <div
+                      class="absolute top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly"
+                    >
+                      <div
+                        class="flex justify-center flex-col text-white opacity-0 group-hover:opacity-100"
+                      >
+                        <h1 class="text-center text-2xl mb-3">
+                          Plantación de 100 árboles
+                        </h1>
+                        <button
+                          class="transition transform translate-y-3 hover:scale-110 group-hover:translate-y-0"
+                          id="btnA"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-12 block m-auto"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="container block mx-auto mt-20">
-            <div class="relative flex flex-col w-full md:flex-row">
-              <!-- un flex con tres columnas (cada columna es div de los de abajo) -->
-              <div class="flex-grow flex-shrink block md:mr-6 fBasis">
-                <img
-                  src="../../assets/img/galeria/gynkana/1.jpg"
-                  alt="una de las diversas actividades de la Gynkana"
-                  class="relative block mb-6"
-                />
-
-                <img
-                  src="../../assets/img/galeria/gynkana/5.jpg"
-                  alt="visita de la gynkana a una clase del centro"
-                  class="relative block mb-6"
-                />
+        </div>
+        <!--! Titulos de la galeria-->
+        <div class="py-16 bg-white hidden" id="infoGymkana">
+          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+              <h2
+                class="mb-2 text-3xl font-medium leading-8 tracking-tight text-gray-900 sm:text-4xl"
+                id="tituloGaleria"
+              >
+                Gymkana De Sensibilización
+              </h2>
+              <p
+                class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto"
+                id="descripcionGaleria"
+              >
+                Los días previos a la realización de la Jornada de Stop CO2 se
+                realizaron diversas actividades en redes sociales y en el centro
+                para adentrar al alumnado a la jornada y el proyecto.
+              </p>
+              <div class="flex justify-center mt-2">
+                <p
+                  class="text-left text-2xl font-semibold tracking-wide text-green-700 uppercase"
+                >
+                  Material Relacionado:
+                </p>
               </div>
-              <div class="flex-grow flex-shrink block md:mr-6 fBasis">
-                <img
-                  src="../../assets/img/galeria/gynkana/2.jpg"
-                  alt="visita de la gynkana a otra clase del centro"
-                  class="relative block mb-6"
-                />
-
-                <img
-                  src="../../assets/img/galeria/gynkana/4.jpg"
-                  alt="diversa visita de la gynkana a una clase del centro"
-                  class="relative block h-auto mb-6"
-                />
-              </div>
-              <div class="flex-grow flex-shrink block fBasis">
-                <img
-                  src="../../assets/img/galeria/gynkana/3.jpg"
-                  alt="actor principal de la gynkana"
-                  class="relative block mb-6"
-                />
-                <img
-                  src="../../assets/img/galeria/gynkana/6.jpg"
-                  alt="una actividad de la gynkana en una clase del centro"
-                  class="relative block mb-6"
-                />
-              </div>
+              <ul
+                class="inline-block mx-2 mt-4 text-lg leading-6 text-left list-disc"
+              >
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=JR4exuuhB50&"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto link"
+                    >Video de concienciación</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
-        </article>
-        <article>
-          <div class="py-4 bg-white">
-            <div class="mx-auto max-w-7xl">
-              <div class="lg:text-center">
-                <h2
-                  class="mb-2 text-3xl font-medium leading-8 tracking-tight text-gray-900 sm:text-4xl"
-                >
-                  Day Stop Co2
-                </h2>
+        </div>
+        <div class="py-16 bg-white hidden" id="infoJornada">
+          <div class="mx-auto max-w-7xl">
+            <div class="lg:text-center">
+              <h2
+                class="mb-2 text-3xl font-medium leading-8 tracking-tight text-gray-900 sm:text-4xl"
+              >
+                Jornada Stop Co2
+              </h2>
+              <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
+                En el transcurso de esta actividad el alumnado del centro
+                aprendió la importancia de cuidar el medioambiente y calcular la
+                huella de carbono con un ejemplo practico con el centro.
+              </p>
+              <div class="flex justify-center mt-2">
                 <p
-                  class="text-base font-semibold tracking-wide text-green-600 uppercase"
+                  class="text-left text-2xl font-semibold tracking-wide text-green-700 uppercase"
                 >
-                  Gallery
+                  Material Relacionado:
                 </p>
-                <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
-                  During this activity, the college's students learned about the
-                  importance of caring for the environment and calculating their
-                  carbon footprint through a practical example with the school.
+              </div>
+              <ul
+                class="inline-block mx-2 mt-4 text-lg leading-6 text-left list-disc"
+              >
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=cP389HOHrzU&list=PLPFxuD2hEI7LPDqpJv9C8Irw85IOdLTlK&index=4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto link"
+                    >Presentación de la jornada</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=4my4nqS_CeE&list=PLPFxuD2hEI7LPDqpJv9C8Irw85IOdLTlK&index=5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto link"
+                    >Conclusión
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1Bd6Xo5ZfZwALajDTMuh7uvhI5C6VcpRS/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto link"
+                    >Video de la ponente de la formación ODS</a
+                  >
+                </li>
+                <li>
                   <a
                     href="https://sites.google.com/cuatrovientos.org/jornadastopco2/inicio"
                     target="_blank"
                     class="link"
-                    >Find out more:</a
+                    >"Sites" con el material empleado en la jornada</a
                   >
+                </li>
+                <li>
+                  <a
+                    href="https://cadenaser.com/emisora/2020/10/23/radio_pamplona/1603465117_122639.html?ssm=tw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto link"
+                    >Noticia sobre la jornada en la cadena SER</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="py-16 bg-white hidden" id="infoSemana">
+          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+              <h2
+                class="mb-2 text-3xl font-medium leading-8 tracking-tight text-gray-900 sm:text-4xl"
+              >
+                Semana Cultural
+              </h2>
+              <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
+                Durante la semana del 1 al 5 de febrero se realizaron diversas
+                actividades relacionadas con el proyecto Stop CO2.
+              </p>
+              <div class="flex justify-center mt-2">
+                <p
+                  class="text-left text-2xl font-semibold tracking-wide text-green-700 uppercase"
+                >
+                  Material Relacionado:
                 </p>
               </div>
+              <ul
+                class="inline-block mx-2 mt-4 text-lg leading-6 text-left list-disc"
+              >
+                <li>
+                  <a
+                    href="https://docs.google.com/document/d/1hSBfEIXnC5yUrRhshSrYdz73GL24FlyIdQ84oCx-uJw/edit"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto link"
+                    >Colaboración con el MUN (Museo de la Universidad de
+                    Navarra)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=V9Z7FQSsTxM"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto link"
+                    >Documental Waste Land proyectado al alumnado
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="container block mx-auto mt-20">
-            <div class="relative flex flex-col w-full md:flex-row">
-              <div class="flex-grow flex-shrink block md:mr-6 fBasis">
-                <img
-                  src="../../assets/img/galeria/jornadaStop/foto(7).jpg"
-                  alt="foto de Mikel Baztán visitando una clase de cuatrovientos "
-                  class="relative block mb-6"
-                />
-                <img
-                  src="../../assets/img/galeria/jornadaStop/foto(2).jpg"
-                  alt="alumno de cuatrovientos realizando una actividad sobre el proyecto stopco2"
-                  class="relative block mb-6"
-                />
+        </div>
+        <div class="py-16 bg-white hidden" id="infoRopa">
+          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+              <h2
+                class="mb-2 text-3xl font-medium leading-8 tracking-tight text-gray-900 sm:text-4xl"
+              >
+                Semana Cultural: Fouroneshop
+              </h2>
+              <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
+                En el transcurso de la semana cultural el alumnado de FPB
+                realizo una creación de un almacén que engloba desde la
+                recepción de la mercancía, su control, inventario, ubicación,
+                etiquetado y posterior venta y distribución.
+              </p>
+              <div class="flex justify-center mt-2">
+                <p
+                  class="text-left text-2xl font-semibold tracking-wide text-green-700 uppercase"
+                >
+                  Material Relacionado:
+                </p>
               </div>
-              <div class="flex-grow flex-shrink block md:mr-6 fBasis">
-                <img
-                  src="../../assets/img/galeria/jornadaStop/foto(3).jpg"
-                  alt="alumno de cuatrovientos realizando una actividad sobre el proyecto stopco2"
-                  class="relative block mb-6"
-                />
-                <img
-                  src="../../assets/img/galeria/jornadaStop/foto(4).jpg"
-                  alt="Organizadores del centro en la charla sobre el proyecto stopco2"
-                  class="relative block mb-6"
-                />
-              </div>
-              <div class="flex-grow flex-shrink block fBasis">
-                <img
-                  src="../../assets/img/galeria/jornadaStop/foto(5).jpg"
-                  alt="alumna realizando un trabajo sobre la stopco2"
-                  class="relative block mb-6"
-                />
-                <img
-                  src="../../assets/img/galeria/jornadaStop/foto(6).jpg"
-                  alt="2"
-                  class="relative block mb-6"
-                />
-              </div>
+              <ul
+                class="inline-block mx-2 mt-4 text-lg leading-6 text-left list-disc"
+              >
+                <li>
+                  <a
+                    href="https://www.fouroneshop.es/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto link"
+                    >Página web de la tienda</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
-        </article>
-        <article>
+        </div>
+        <div class="py-16 bg-white hidden" id="infoArbol">
+          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+              <h2
+                class="mb-2 text-3xl font-medium leading-8 tracking-tight text-gray-900 sm:text-4xl"
+              >
+                Plantación de 100 árboles
+              </h2>
+              <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
+                El alumnado de FP Especial, Básica y los ciclos de Grado Medio
+                realizarón una jornada de plantación de árboles en Berriozar,
+                como medida de compensación de nuestras emisiones de CO2.
+              </p>
+              <div class="flex justify-center mt-2">
+                <p
+                  class="text-left text-2xl font-semibold tracking-wide text-green-700 uppercase"
+                >
+                  Material Relacionado:
+                </p>
+              </div>
+              <ul
+                class="inline-block mx-2 mt-4 text-lg leading-6 text-left list-disc"
+              >
+                <li>
+                  <a
+                    href="https://www.instagram.com/p/CMR4BqJJl4P/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto link"
+                    >Post en Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/p/CNCWyB7JSYf/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto link"
+                    >Post en Instagram con el resumen de la actividad</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1-VAlKt9sFJ-4zBCyg-mDE7zEgnjzJtu6/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto link"
+                    >Entrevista en la cadena SER</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- ! Galería -->
+        <div class="container block mx-auto mt-20">
+          <div class="relative flex flex-col w-full md:flex-row">
+            <!-- un flex con tres columnas (cada columna es div de los de abajo) Col1-->
+            <div class="flex-grow flex-shrink block md:mr-6 fBasis">
+              <img
+                src="../../assets/img/galeria/gynkana/1.jpg"
+                alt="gynkana"
+                class="relative hidden mb-6"
+              />
+
+              <img
+                src="../../assets/img/galeria/gynkana/5.jpg"
+                alt="gynkana"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/jornadaStop/foto(7).jpg"
+                alt="jornadaStop "
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/jornadaStop/foto(2).jpg"
+                alt="jornadaStop"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/semanaCultural/foto(1).jpg"
+                alt="semanaCultural"
+                class="relative hidden mb-6 flex.grow"
+              />
+              <img
+                src="../../assets/img/galeria/semanaCultural/foto(2).jpg"
+                alt="semanaCultural"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/semanaCultural/foto(8).jpg"
+                alt="semanaCultural"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/ropaFPB/1.JPG"
+                alt="ropaFPB"
+                class="relative hidden mb-6 flex.grow"
+              />
+              <img
+                src="../../assets/img/galeria/ropaFPB/2.JPG"
+                alt="ropaFPB"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/arboles/1.jpg"
+                alt="arboles"
+                class="relative hidden mb-6 flex.grow"
+              />
+              <img
+                src="../../assets/img/galeria/arboles/2.jpg"
+                alt="arboles"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/jornadaStop/foto(6).jpg"
+                alt="jornadaStop"
+                class="relative hidden mb-6"
+              />
+            </div>
+            <!-- Col2 -->
+            <div class="flex-grow flex-shrink block md:mr-6 fBasis">
+              <img
+                src="../../assets/img/galeria/gynkana/2.jpg"
+                alt="gynkana"
+                class="relative hidden mb-6"
+              />
+
+              <img
+                src="../../assets/img/galeria/gynkana/4.jpg"
+                alt="gynkana"
+                class="relative hidden h-auto mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/jornadaStop/foto(3).jpg"
+                alt="jornadaStop"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/jornadaStop/foto(4).jpg"
+                alt="jornadaStop"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/semanaCultural/foto(3).jpg"
+                alt="semanaCultural"
+                class="relative hidden mb-6 flex.grow"
+              />
+              <img
+                src="../../assets/img/galeria/semanaCultural/foto(4).jpg"
+                alt="semanaCultural"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/semanaCultural/foto(9).JPG"
+                alt="semanaCultural"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/ropaFPB/3.JPG"
+                alt="ropaFPB"
+                class="relative hidden mb-6 flex.grow"
+              />
+              <img
+                src="../../assets/img/galeria/ropaFPB/4.JPG"
+                alt="ropaFPB"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/arboles/3.jpg"
+                alt="arboles"
+                class="relative hidden mb-6 flex.grow"
+              />
+              <img
+                src="../../assets/img/galeria/arboles/4.jpg"
+                alt="arboles"
+                class="relative hidden mb-6"
+              />
+            </div>
+            <!-- Col3 -->
+            <div class="flex-grow flex-shrink block fBasis">
+              <img
+                src="../../assets/img/galeria/gynkana/3.jpg"
+                alt="gynkana"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/gynkana/6.jpg"
+                alt="gynkana"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/jornadaStop/foto(5).jpg"
+                alt="jornadaStop"
+                class="relative hidden mb-6"
+              />
+
+              <img
+                src="../../assets/img/galeria/semanaCultural/foto(7).jpg"
+                alt="semanaCultural"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/semanaCultural/foto(6).jpg"
+                alt="semanaCultural"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/semanaCultural/foto(5).jpg"
+                alt="semanaCultural"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/semanaCultural/foto(10).JPG"
+                alt="semanaCultural"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/ropaFPB/5.JPG"
+                alt="ropaFPB"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/ropaFPB/6.JPG"
+                alt="ropaFPB"
+                class="relative hidden mb-6"
+              />
+              <img
+                src="../../assets/img/galeria/arboles/5.jpg"
+                alt="arboles"
+                class="relative hidden mb-6"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="menoriaJornada" class="hidden">
           <div class="py-16 bg-white">
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div class="lg:text-center">
                 <h2
                   class="mb-2 text-3xl font-medium leading-8 tracking-tight text-gray-900 sm:text-4xl"
                 >
-                  Cultural week
+                  Memoria De La Jornada Stop CO2
                 </h2>
-                <p
-                  class="text-base font-semibold tracking-wide text-green-600 uppercase"
-                >
-                  Gallery
-                </p>
                 <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
-                  During the first week of February, we made several activities
-                  related to the Stop CO2 project
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="container block mx-auto mt-20">
-            <div class="relative flex flex-col w-full md:flex-row">
-              <div
-                class="flex-grow flex-shrink block md:mr-6 tw-scale-y:1 fBasis"
-              >
-                <img
-                  src="../../assets/img/galeria/semanaCultural/foto(1).jpg"
-                  alt="formación ods a los profesores"
-                  class="relative block mb-6 flex.grow"
-                />
-                <img
-                  src="../../assets/img/galeria/semanaCultural/foto(2).jpg"
-                  alt="alumnos durante la semana Cultural"
-                  class="relative block mb-6"
-                />
-                <img
-                  src="../../assets/img/galeria/semanaCultural/foto(8).jpg"
-                  alt="alumnos durante la semana Cultural realizando una actividad grupal"
-                  class="relative block mb-6"
-                />
-              </div>
-              <div
-                class="flex-grow flex-shrink block md:mr-6 tw-scale-y:1 fBasis"
-              >
-                <img
-                  src="../../assets/img/galeria/semanaCultural/foto(3).jpg"
-                  alt="actividad grupal en el aula"
-                  class="relative block mb-6 flex.grow"
-                />
-                <img
-                  src="../../assets/img/galeria/semanaCultural/foto(4).jpg"
-                  alt="resultado de la actividad de la semana cultural"
-                  class="relative block mb-6"
-                />
-                <img
-                  src="../../assets/img/galeria/semanaCultural/foto(9).JPG"
-                  alt="alumnado realizando una actividad de la semana cultural"
-                  class="relative block mb-6"
-                />
-              </div>
-              <div class="flex-grow flex-shrink block fBasis">
-                <img
-                  src="../../assets/img/galeria/semanaCultural/foto(7).jpg"
-                  alt="alumnado realizando una actividad de la semana cultural"
-                  class="relative block mb-6"
-                />
-                <img
-                  src="../../assets/img/galeria/semanaCultural/foto(6).jpg"
-                  alt="alumna tomando apuntes en una charla de la semana cultural"
-                  class="relative block mb-6"
-                />
-                <img
-                  src="../../assets/img/galeria/semanaCultural/foto(5).jpg"
-                  alt="una charla de la semana cultural"
-                  class="relative block mb-6"
-                />
-                <img
-                  src="../../assets/img/galeria/semanaCultural/foto(10).JPG"
-                  alt="alumnado de una clase realizando una actividad grupal"
-                  class="relative block mb-6"
-                />
-              </div>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div class="py-16 bg-white">
-            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-              <div class="lg:text-center">
-                <h2
-                  class="mb-2 text-3xl font-medium leading-8 tracking-tight text-gray-900 sm:text-4xl"
-                >
-                  Cultural week: FourOneShop
-                </h2>
-                <p
-                  class="text-base font-semibold tracking-wide text-green-600 uppercase"
-                >
-                  Gallery
-                </p>
-                <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
-                  During the Cultural week, the students of FPB made a warehouse
-                  that covered the reception of the goods, their control,
-                  inventory, placement, labelling and further sale and
-                  distribution.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="container block mx-auto mt-20">
-            <div class="relative flex flex-col w-full md:flex-row">
-              <div
-                class="flex-grow flex-shrink block md:mr-6 tw-scale-y:1 fBasis"
-              >
-                <img
-                  src="../../assets/img/galeria/ropaFPB/1.JPG"
-                  alt="alumnado de fpb en la tienda creada"
-                  class="relative block mb-6 flex.grow"
-                />
-                <img
-                  src="../../assets/img/galeria/ropaFPB/2.JPG"
-                  alt="alumnado de fpb preparando la llegada de otros alumnos"
-                  class="relative block mb-6"
-                />
-              </div>
-              <div
-                class="flex-grow flex-shrink block md:mr-6 tw-scale-y:1 fBasis"
-              >
-                <img
-                  src="../../assets/img/galeria/ropaFPB/3.JPG"
-                  alt="alumnado visitando la tienda de fpb"
-                  class="relative block mb-6 flex.grow"
-                />
-                <img
-                  src="../../assets/img/galeria/ropaFPB/4.JPG"
-                  alt="alumnado visitando la tienda del alumnado de fpb"
-                  class="relative block mb-6"
-                />
-              </div>
-              <div class="flex-grow flex-shrink block fBasis">
-                <img
-                  src="../../assets/img/galeria/ropaFPB/5.JPG"
-                  alt="alumnado mirando la ropa de la tienda de fpb"
-                  class="relative block mb-6"
-                />
-                <img
-                  src="../../assets/img/galeria/ropaFPB/6.JPG"
-                  alt="etiquetas de la ropa de la tienda de fpb"
-                  class="relative block mb-6"
-                />
-              </div>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div class="py-16 bg-white">
-            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-              <div class="lg:text-center">
-                <h2
-                  class="mb-2 text-3xl font-medium leading-8 tracking-tight text-gray-900 sm:text-4xl"
-                >
-                  Plantation of 100 trees
-                </h2>
-                <p
-                  class="text-base font-semibold tracking-wide text-green-600 uppercase"
-                >
-                  Gallery
-                </p>
-                <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
-                  The students of Special Vocational Training, Basic Vocational
-                  Training and Intermediate Cycles carried out a day of tree
-                  planting in Berriozar, as a compensation our CO2 emissions.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="container block mx-auto mt-20">
-            <div class="relative flex flex-col w-full md:flex-row">
-              <div
-                class="flex-grow flex-shrink block md:mr-6 tw-scale-y:1 fBasis"
-              >
-                <img
-                  src="../../assets/img/galeria/arboles/1.jpg"
-                  alt="alumnado de fpb en la tienda creada"
-                  class="relative block mb-6 flex.grow"
-                />
-                <img
-                  src="../../assets/img/galeria/arboles/2.jpg"
-                  alt="alumnado de fpb preparando la llegada de otros alumnos"
-                  class="relative block mb-6"
-                />
-              </div>
-              <div
-                class="flex-grow flex-shrink block md:mr-6 tw-scale-y:1 fBasis"
-              >
-                <img
-                  src="../../assets/img/galeria/arboles/3.jpg"
-                  alt="alumnado visitando la tienda de fpb"
-                  class="relative block mb-6 flex.grow"
-                />
-                <img
-                  src="../../assets/img/galeria/arboles/4.jpg"
-                  alt="alumnado visitando la tienda del alumnado de fpb"
-                  class="relative block mb-6"
-                />
-              </div>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div class="py-16 bg-white">
-            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-              <div class="lg:text-center">
-                <h2
-                  class="mb-2 text-3xl font-medium leading-8 tracking-tight text-gray-900 sm:text-4xl"
-                >
-                  Report of the Stop CO2 Day
-                </h2>
-                <p
-                  class="text-base font-semibold tracking-wide text-green-600 uppercase"
-                >
-                  Gallery
-                </p>
-                <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
-                  With the different activities of the StopCO2 Day, a report was
-                  written. Which included the results, objectives and
-                  compromises of the centre in relation to the project.
+                  Con las diferentes actividades de la Jornada StopCO2 se
+                  realizo una memoria que recoge los resultados, objetivos y
+                  compromisos del centro en relación al proyecto.
                 </p>
               </div>
             </div>
@@ -1291,9 +1597,11 @@
           <div class="container mx-auto">
             <iframe
               src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=h9fof5i1ci"
+              class="hidden"
             ></iframe>
           </div>
-        </article>
+        </div>
+        <script src="../../js/galeria.js"></script>
       </section>
     </main>
     <footer class="py-6 mt-24 bg-gray-200 text-coolGray-900">
