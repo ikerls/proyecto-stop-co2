@@ -14,10 +14,49 @@
     <title>Stop CO2 | Erasmus+</title>
   </head>
   <body>
-    <header class="container fixed z-50 justify-center min-w-full">
-      <nav class="bg-white shadow">
+    <header
+      class="container fixed z-50 justify-center min-w-full bg-white shadow-lg"
+    >
+      <nav>
         <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div class="relative flex justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button -->
+              <button id="boton" name="MenuPrincipal">
+                <!-- Icon when menu is closed. -->
+                <svg
+                  class="hidden w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+                <!-- Icon when menu is open. -->
+                <svg
+                  class="hidden w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
             <div
               class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start"
             >
@@ -37,49 +76,33 @@
             <div
               class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
             >
-              <button
-                class="p-1 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800"
-              >
-                <svg
-                  class="w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+              <div class="relative ml-3">
+                <div>
+                  <button id="botonIdiomas" name="MenuIdiomas">
+                    <img
+                      class="w-8 h-8"
+                      src="../../assets/img/iconoBanderas/reino-unido.png"
+                      alt="bandera de españa"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="mt-6">
+                <div
+                  class="absolute right-0 hidden w-16 py-1 mt-2 origin-top-right bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                  id="menuIdiomas"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </button>
+                  <a
+                    href="../../html/erasmus.html"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    ><img
+                      class="w-8 h-8"
+                      src="../../assets/img/iconoBanderas/espana.png"
+                      alt="bandera de UK"
+                  /></a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="hidden sm:hidden" id="menu">
-          <div class="pt-2 pb-4 space-y-1">
-            <a
-              href="../index.html"
-              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-800 border-l-4 focus:border-green-800 focus:bg-green-50 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
-              >Inicio</a
-            >
-            <a
-              href="#SobreElProyecto"
-              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 focus:border-green-800 focus:bg-green-50"
-              >Sobre El proyecto</a
-            >
-            <a
-              href="#Actividades"
-              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 focus:border-green-800 focus:bg-green-50"
-              >Actividades</a
-            >
-            <a
-              href="#Galeria"
-              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 focus:border-green-800 focus:bg-green-50"
-              >Galería</a
-            >
           </div>
         </div>
       </nav>
@@ -113,7 +136,7 @@
         </div>
         <div class="mt-20 text-center">
           <a
-            href="../../index.html"
+            href="../index.html"
             class="px-6 py-3 text-sm font-bold text-white uppercase rounded shadow outline-none hover:shadow-lg fondoVerde1"
           >
             Back to Home
@@ -261,5 +284,6 @@
         </div>
       </div>
     </footer>
+    <script src="../../js/nav.js"></script>
   </body>
 </html>
