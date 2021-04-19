@@ -1,837 +1,536 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="shortcut icon"
-      href="../assets/img/cuatrovientos/Recurso1.svg"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="../assets/cssSinPurgar/main.css" />
-    <link rel="stylesheet" href="../assets/css/landing.css" />
-    <script
-      src="https://kit.fontawesome.com/72994fe6c5.js"
-      crossorigin="anonymous"
-    ></script>
-    <meta
-      name="description"
-      content="Proyecto del CI Cuatrovientos en colaboración on otros socios europeos para llegar a ser un centro neutro en emisiones"
-    />
-    <title>Stop CO2 | CF Train in VET</title>
-  </head>
-  <body class="antialiased text-gray-800">
-    <header
-      class="container fixed z-50 justify-center min-w-full bg-white shadow-lg"
-    >
-      <nav>
-        <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div class="relative flex justify-between h-16">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <!-- Mobile menu button -->
-              <button id="boton" name="MenuPrincipal">
-                <!-- Icon when menu is closed. -->
-                <svg
-                  class="block w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  ></path>
-                </svg>
-                <!-- Icon when menu is open. -->
-                <svg
-                  class="hidden w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-            <div
-              class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start"
-            >
-              <div class="flex items-center flex-shrink-0">
-                <img
-                  class="block w-auto h-8 lg:hidden"
-                  src="../assets/img/cuatrovientos/Recurso2.png"
-                  alt="Workflow"
-                />
-                <img
-                  class="hidden w-auto h-8 lg:block"
-                  src="../assets/img/cuatrovientos/Recurso2.png"
-                  alt="Workflow"
-                />
-              </div>
-              <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                <a
-                  href="#Inicio"
-                  class="inline-flex items-center px-2 pt-1 text-base font-medium text-gray-900 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800"
-                >
-                  Home
-                </a>
-                <a
-                  href="#Resumen"
-                  class="inline-flex items-center px-2 pt-1 text-base font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800"
-                >
-                  The project
-                </a>
-                <a
-                  href="#Socios"
-                  class="inline-flex items-center px-2 pt-1 text-base font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800"
-                >
-                  Partners
-                </a>
-                <a
-                  href="#Contacto"
-                  class="inline-flex items-center px-2 pt-1 text-base font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800"
-                >
-                  Contact
-                </a>
-              </div>
-            </div>
-            <div
-              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
-            >
-              <div class="relative ml-3">
-                <div>
-                  <button id="botonIdiomas" name="MenuIdiomas">
-                    <img
-                      class="w-8 h-8"
-                      src="../assets/img/iconoBanderas/reino-unido.png"
-                      alt="bandera de españa"
-                    />
-                  </button>
-                </div>
-              </div>
-              <div class="mt-6">
-                <div
-                  class="absolute right-0 hidden w-16 py-1 mt-2 origin-top-right bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                  id="menuIdiomas"
-                >
-                  <a
-                    href="../index.html"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    ><img
-                      class="w-8 h-8"
-                      src="../assets/img/iconoBanderas/espana.png"
-                      alt="bandera de UK"
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hidden sm:hidden" id="menu">
-          <div class="pt-2 pb-4 space-y-1">
-            <a
-              href="#Inicio"
-              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-800 border-l-4 focus:border-green-800 focus:bg-green-50 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
-              >Home</a
-            >
-            <a
-              href="#Resumen"
-              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 focus:border-green-800 focus:bg-green-50"
-              >The project</a
-            >
-            <a
-              href="#Socios"
-              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 focus:border-green-800 focus:bg-green-50"
-              >Partners</a
-            >
-            <a
-              href="#Contacto"
-              class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 focus:border-green-800 focus:bg-green-50"
-              >Contact</a
-            >
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!-- Inicio -->
-      <section
-        id="Inicio"
-        class="relative flex items-center content-center justify-center h-auto pt-0 pb-0 md:pt-16 md:pb-32 lg:h-screen lg:min-h-full"
-      >
-        <div class="container items-center justify-center">
-          <div class="flex flex-wrap items-center">
-            <div class="w-full px-4 ml-auto mr-auto text-left lg:w-6/12">
-              <div class="pb-20 pr-12">
-                <h4 class="pt-20 font-semibold">
-                  <span>CUATROVIENTOS</span> PRESENTS,
-                </h4>
-                <h1 class="text-6xl font-semibold text-black lef">Stop CO2</h1>
-                <p class="pb-5 mt-4 text-lg text-gray-600">
-                  Stop CO2 | CF Train in VET, a project of sustainable
-                  development, having as its main
-                  <span class="font-bold"> goal</span> to become
-                  <span class="font-bold"
-                    >the first neutral emission vocational training college in
-                    Navarra.</span
-                  >
-                </p>
-                <a
-                  href="#Resumen"
-                  class="px-6 py-3 text-sm font-bold text-white uppercase rounded shadow outline-none hover:shadow-lg"
-                >
-                  Find out
-                </a>
-              </div>
-            </div>
-            <div class="px-4 ml-auto mr-auto text-center lg:max-w-lg lg:">
-              <img
-                src="../assets/img/fotos.png"
-                alt="imágenes de Cuatrovientos"
-                class="object-fill"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="items-center h-auto fondoVerde" id="Resumen">
-        <div
-          class="container justify-center px-4 py-16 mx-auto sm:py-20 sm:px-6 lg:px-8"
-        >
-          <div class="mx-2 text-left md:text-center">
-            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-              <span class="block">STOP CO2</span>
-              <span class="block">CFTrain in VET</span>
-            </h2>
-            <p class="mt-4 text-lg leading-6 text-white" id="TimeLine">
-              An international project about
-              <span class="font-bold">sustainability and climate change</span>
-              based on the concept of
-              <span class="font-bold"
-                >measuring and reducing the Carbon Footprint.</span
-              >
-              Which takes place in three phases:
-            </p>
-            <ul
-              class="inline-block mx-2 mt-4 text-lg leading-6 text-left text-white list-disc"
-            >
-              <li>
-                A first one where
-                <span class="font-bold">we detected the necessity</span> to be
-                neutral in emissions.
-              </li>
-              <li>
-                The second one in which
-                <span class="font-bold">actions are proposed</span> and
-                activities are carried out to implement them.
-              </li>
-              <li>
-                And finally, the closing phase to
-                <span class="font-bold">review the results</span> achieved and
-                present them.
-              </li>
-            </ul>
-          </div>
-          <div class="flex flex-col lg:flex-row mt-10 justify-between">
-            <div
-              class="flex mr-0 lg:mr-11 flex-1 relative items-center group bg-white mb-4 rounded-lg shadow-lg"
-            >
-              <div class=" ">
-                <div class="px-6 py-5 rounded">
-                  <h1 class="colorVerde text-center text-3xl">
-                    Environmental Statement
-                  </h1>
-                </div>
-                <div
-                  class="absolute rounded-lg top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly"
-                >
-                  <a
-                    class="text-white transition transform translate-y-3 opacity-0 hover:scale-110 group-hover:translate-y-0 group-hover:opacity-100"
-                    target="_blank"
-                    href="./assets/pdf/1DM.pdf"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      class="w-12"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
 
-            <div
-              class="flex mr-0 lg:mr-11 flex-1 relative items-center group bg-white mb-4 rounded-lg shadow-lg"
-            >
-              <div class=" ">
-                <div class="px-6 py-5 rounded">
-                  <h1 class="colorVerde text-center text-3xl">
-                    Carbon Footprint report
-                  </h1>
-                </div>
-                <div
-                  class="absolute rounded-lg top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly"
-                >
-                  <a
-                    class="text-white transition transform translate-y-3 opacity-0 hover:scale-110 group-hover:translate-y-0 group-hover:opacity-100"
-                    target="_blank"
-                    href="./assets/pdf/2Informe.pdf"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      class="w-12"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex mr-0 lg:mr-11 flex-1 relative items-center group bg-white mb-4 rounded-lg shadow-lg"
-            >
-              <div class=" ">
-                <div class="px-6 py-5 rounded">
-                  <h1 class="colorVerde text-center text-3xl">
-                    Carbon Footprint Reduction Plan
-                  </h1>
-                </div>
-                <div
-                  class="absolute rounded-lg top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly"
-                >
-                  <a
-                    class="text-white transition transform translate-y-3 opacity-0 hover:scale-110 group-hover:translate-y-0 group-hover:opacity-100"
-                    target="_blank"
-                    href="./assets/pdf/3Plan.pdf"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      class="w-12"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- timeline - fases del proyecto -->
-      <section class="container mx-auto">
-        <div class="flex flex-col grid-cols-9 mx-auto md:grid">
-          <!-- card left -->
-          <div class="flex flex-row-reverse md:contents">
-            <div class="col-start-1 col-end-5 p-4 my-4 ml-auto rounded-xl">
-              <div class="max-w-sm overflow-hidden rounded shadow-lg tarjeta">
-                <div class="p-3 rounded shadow-lg">
-                  <div class="relative group">
-                    <img
-                      class="block w-full rounded"
-                      src="../assets/img/galeria/semanaCultural/foto(6).jpg"
-                      alt="fase de preparación"
-                    />
-                    <div
-                      class="absolute top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly"
-                    >
-                      <a
-                        class="text-white transition transform translate-y-3 opacity-0 hover:scale-110 group-hover:translate-y-0 group-hover:opacity-100"
-                        href="./html/proyecto.html#SobreElProyecto"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          class="w-12"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="p-5">
-                    <h3 class="text-2xl">About the project</h3>
-                    <p class="text-gray-700">
-                      In this initial phase of the project, we identify and
-                      analyse the project, its structure, objectives...
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
-              <div class="flex items-center justify-center w-6 h-full">
-                <div class="w-1 h-full pointer-events-none fondoVerde"></div>
-              </div>
-              <div
-                class="absolute w-6 h-6 -mt-3 rounded-full shadow top-1/2 fondoVerde2"
-              ></div>
-            </div>
-          </div>
-          <!-- card right -->
-          <div class="flex md:contents">
-            <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
-              <div class="flex items-center justify-center w-6 h-full">
-                <div class="w-1 h-full pointer-events-none fondoVerde"></div>
-              </div>
-              <div
-                class="absolute w-6 h-6 -mt-3 rounded-full shadow top-1/2 fondoVerde2"
-              ></div>
-            </div>
-            <div class="col-start-6 col-end-10 p-4 my-4 mr-auto rounded-xl">
-              <div class="max-w-sm overflow-hidden rounded shadow-lg tarjeta">
-                <div class="p-3 rounded shadow-lg">
-                  <div class="relative group h-3/6">
-                    <img
-                      class="block w-full rounded"
-                      src="../assets/img/cuatrovientos1.jpg"
-                      alt="fase de preparación"
-                    />
-                    <div
-                      class="absolute top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly"
-                    >
-                      <a
-                        class="text-white transition transform translate-y-3 opacity-0 hover:scale-110 group-hover:translate-y-0 group-hover:opacity-100"
-                        href="./html/proyecto.html#Actividades"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          class="w-12"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="p-5">
-                    <h3 class="text-2xl">Activities</h3>
-                    <p class="text-gray-700">
-                      In this phase we implement various project related
-                      activities to achieve our objectives.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- card left -->
-          <div class="flex flex-row-reverse md:contents">
-            <div class="col-start-1 col-end-5 p-4 my-4 ml-auto rounded-xl">
-              <div class="max-w-sm overflow-hidden rounded shadow-lg tarjeta">
-                <div class="p-3 rounded shadow-lg">
-                  <div class="relative group">
-                    <img
-                      class="block w-full rounded"
-                      src="../assets/img/procud.jpg"
-                      alt="fase de preparación"
-                    />
-                    <div
-                      class="absolute top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly"
-                    >
-                      <a
-                        class="text-white transition transform translate-y-3 opacity-0 hover:scale-110 group-hover:translate-y-0 group-hover:opacity-100"
-                        href="./html/proyecto.html#Galeria"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          class="w-12"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="p-5">
-                    <h3 class="text-2xl">Gallery of the activities</h3>
-                    <p class="text-gray-700">
-                      A number of different results have been achieved as a
-                      result of the project's activities.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
-              <div class="flex items-center justify-center w-6 h-full">
-                <div class="w-1 h-full pointer-events-none fondoVerde"></div>
-              </div>
-              <div
-                class="absolute w-6 h-6 -mt-3 rounded-full shadow top-1/2 fondoVerde2"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Socios -->
-      <section class="block fondoVerde" id="Socios">
-        <div class="container px-4 pt-24 pb-24 mx-auto">
-          <div class="flex flex-wrap justify-center text-center">
-            <div class="w-full px-4 lg:w-6/12">
-              <h2 class="text-4xl font-semibold text-white">Our Partners:</h2>
-              <p class="mt-4 mb-4 text-lg leading-relaxed text-white">
-                For the execution of this project we have the collaboration of
-                the following European organisations,
-              </p>
-            </div>
-          </div>
-          <div id="youtube" class="relative overflow-hidden">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/ESNEuouXljQ"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              class="absolute inset-0 w-full h-full"
-              title="Youtube video de los socios"
-            ></iframe>
-          </div>
-          <div class="bg-white rounded-lg shadow-lg mt-11">
-            <div class="px-4 py-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-              <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-                <div
-                  class="flex justify-center col-span-1 md:col-span-2 lg:col-span-1"
-                >
-                  <a
-                    href="https://www.htl-wolfsberg.at/htl/index.php/de/"
-                    target="_blank"
-                  >
-                    <img
-                      id="tamañosocio"
-                      src="../assets/img/socios/Imagen2.png"
-                      alt="htl-wolfsberg logo"
-                    />
-                  </a>
-                </div>
-                <div
-                  class="flex justify-center col-span-1 md:col-span-2 lg:col-span-1"
-                >
-                  <a
-                    href="https://www.home.sandvik/en/"
-                    target="_blank"
-                    id="tamañosocio2"
-                  >
-                    <img
-                      src="../assets/img/socios/sa.png"
-                      alt="logo de sandvik"
-                    />
-                  </a>
-                </div>
-                <div
-                  class="flex justify-center col-span-1 md:col-span-2 lg:col-span-1"
-                >
-                  <a
-                    href="http://www.tfobz.it/"
-                    target="_blank"
-                    id="tamañosocio3"
-                  >
-                    <img
-                      src="../assets/img/socios/Imagen4.png"
-                      alt="logo de tfobz "
-                    />
-                  </a>
-                </div>
-                <div
-                  class="flex justify-center col-span-1 md:col-span-3 lg:col-span-1"
-                >
-                  <a href="https://www.cenifer.com" target="_blank">
-                    <img
-                      id="tamañosocio4"
-                      src="../assets/img/socios/Imagen5.png"
-                      alt="logo de cenifer "
-                    />
-                  </a>
-                </div>
-                <div
-                  class="flex justify-center col-span-2 md:col-span-3 lg:col-span-1"
-                >
-                  <a href="https://stenum.com/?lang=en" target="_blank">
-                    <img
-                      id="tamañosocio5"
-                      src="../assets/img/socios/Imagen6.jpg"
-                      alt="logo de stenum"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Contacto -->
-      <section class="block py-24 pt-20" id="Contacto">
-        <div class="container px-4 mx-auto text-center">
-          <h2 class="text-4xl font-semibold">
-            Get in touch with Cuatrovientos
-          </h2>
-          <p class="mt-4 mb-4 text-lg leading-relaxed">
-            You can visit our social media to keep up to date or you can send us
-            an e-mail using the following contact form.
-          </p>
-          <div class="flex justify-between mb-12 md:justify-center">
-            <a
-              href="https://www.instagram.com/cipcuatrovientos/?hl=es"
-              class="colorVerde md:mr-11"
-              target="_blank"
-            >
-              <i class="fab fa-instagram-square fa-7x"></i>
-            </a>
-            <a
-              href="https://www.facebook.com/cipcuatrovientos/"
-              class="colorVerde md:mr-11"
-              target="_blank"
-            >
-              <i class="fab fa-facebook-square fa-7x"></i>
-            </a>
-            <a
-              href="https://twitter.com/_cuatrovientos"
-              class="colorVerde"
-              target="_blank"
-            >
-              <i class="fab fa-twitter-square fa-7x"></i>
-            </a>
-          </div>
-          <div class="flex flex-wrap justify-center">
-            <form
-              class="w-full max-w-lg p-16 text-left bg-gray-100 shadow-2xl rounded-2xl"
-              action="mailto:info@cuatrovientos.org"
-            >
-              <h2 class="text-3xl font-semibold pb-11">Get in touch with us</h2>
-              <div class="flex flex-wrap mb-6 -mx-3">
-                <div class="w-full px-3">
-                  <label
-                    class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
-                    for="nick"
-                  >
-                    Name
-                  </label>
-                  <input
-                    class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="nick"
-                    type="text"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="flex flex-wrap mb-6 -mx-3">
-                <div class="w-full px-3">
-                  <label
-                    class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
-                    for="email"
-                  >
-                    E-mail
-                  </label>
-                  <input
-                    class="z-10 block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="email"
-                    type="email"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="flex flex-wrap mb-6 -mx-3">
-                <div class="w-full px-3">
-                  <label
-                    class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
-                    for="message"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    class="block w-full h-48 px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none resize-none no-resize focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="message"
-                    required
-                  ></textarea>
-                </div>
-              </div>
-              <div class="md:flex md:items-center">
-                <div class="md:w-1/3">
-                  <button
-                    class="px-4 py-2 font-bold text-white bg-teal-400 rounded shadow hover:bg-teal-400 focus:shadow-outline focus:outline-none fondoVerde"
-                    type="submit"
-                    name="Enviar"
-                  >
-                    Send
-                  </button>
-                </div>
-                <div class="md:w-2/3"></div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="py-6 mt-24 bg-gray-200 text-coolGray-900">
-      <div
-        class="container px-6 mx-auto space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50"
-      >
-        <div class="grid grid-cols-12">
-          <div class="pb-6 col-span-full md:pb-0 md:col-span-6">
-            <div class="flex justify-center md:justify-start">
-              <div
-                class="flex items-center justify-center h-24 rounded-full w-55 bg-emerald-600"
-              >
-                <a href="http://www.cuatrovientos.org/">
-                  <img
-                    src="../assets/img/cuatrovientos/logo.png"
-                    alt="logo de cuatrovientos"
-                  />
-                </a>
-              </div>
-            </div>
-            <!-- <p class="text-center md:text-left">Proyecto cofinanciado por:</p> -->
-            <div class="flex justify-center md:justify-start">
-              <div class="flex items-center w-1/2 rounded-full bg-emerald-600">
-                <a href="../html/erasmus.html">
-                  <img
-                    src="../assets/img/cuatrovientos/en/1.png"
-                    alt="logo de erasmus plus"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="text-center col-span-full md:col-start-10 md:text-left md:col-span-6"
-          >
-            <p class="pb-1 text-lg font-medium">Contact us:</p>
-            <ul>
-              <li>CENTRO INTEGRADO CUATROVIENTOS</li>
-              <li>Tel: (34) 948 12 41 29</li>
-              <li>info@cuatrovientos.org</li>
-              <li class="text-lg font-medium">Address:</li>
-              <li>31012, C. del Muelle, 3, 31012 Pamplona, Navarra</li>
-            </ul>
-          </div>
-        </div>
-        <div class="grid justify-center pt-6 lg:justify-between">
-          <div
-            class="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6"
-          >
-            <span>©2021 CI Cuatrovientos</span>
-            <a href="https://www.cuatrovientos.org/politica-privacidad/">
-              <span>Politics of privacy</span>
-            </a>
-            <a href="https://www.cuatrovientos.org/politica-de-cookies/">
-              <span>Politics of cookies</span>
-            </a>
-          </div>
-          <div class="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
-            <a
-              href="https://www.instagram.com/cipcuatrovientos/?hl=es"
-              class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-600 text-coolGray-50"
-              target="_blank"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                  clip-rule="evenodd"
-                ></path>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="../assets/img/cuatrovientos/Recurso1.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="../assets/cssSinPurgar/main.css" />
+  <link rel="stylesheet" href="../assets/css/landing.css" />
+  <script src="https://kit.fontawesome.com/72994fe6c5.js" crossorigin="anonymous"></script>
+  <meta name="description"
+    content="Proyecto del CI Cuatrovientos en colaboración on otros socios europeos para llegar a ser un centro neutro en emisiones" />
+  <title>Stop CO2 | CF Train in VET</title>
+</head>
+
+<body class="antialiased text-gray-800">
+  <header class="container fixed z-50 justify-center min-w-full bg-white shadow-lg">
+    <nav>
+      <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="relative flex justify-between h-16">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button -->
+            <button id="boton" name="MenuPrincipal">
+              <!-- Icon when menu is closed. -->
+              <svg class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
               </svg>
-            </a>
-            <a
-              href="https://www.facebook.com/cipcuatrovientos/"
-              class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-600 text-coolGray-50"
-              target="_blank"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                  clip-rule="evenodd"
-                ></path>
+              <!-- Icon when menu is open. -->
+              <svg class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
               </svg>
-            </a>
-            <a
-              href="https://twitter.com/_cuatrovientos"
-              class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-600 text-coolGray-50"
-              target="_blank"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-                ></path>
-              </svg>
-            </a>
+            </button>
+          </div>
+          <div class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
+            <div class="flex items-center flex-shrink-0">
+              <img class="block w-auto h-8 lg:hidden" src="../assets/img/cuatrovientos/Recurso2.png" alt="Workflow" />
+              <img class="hidden w-auto h-8 lg:block" src="../assets/img/cuatrovientos/Recurso2.png" alt="Workflow" />
+            </div>
+            <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+              <a href="#Inicio"
+                class="inline-flex items-center px-2 pt-1 text-base font-medium text-gray-900 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800">
+                Home
+              </a>
+              <a href="#Resumen"
+                class="inline-flex items-center px-2 pt-1 text-base font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800">
+                The project
+              </a>
+              <a href="#Socios"
+                class="inline-flex items-center px-2 pt-1 text-base font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800">
+                Partners
+              </a>
+              <a href="#Contacto"
+                class="inline-flex items-center px-2 pt-1 text-base font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 focus:border-green-800">
+                Contact
+              </a>
+            </div>
+          </div>
+          <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <div class="relative ml-3">
+              <div>
+                <button id="botonIdiomas" name="MenuIdiomas">
+                  <img class="w-8 h-8" src="../assets/img/iconoBanderas/reino-unido.png" alt="bandera de españa" />
+                </button>
+              </div>
+            </div>
+            <div class="mt-6">
+              <div
+                class="absolute right-0 hidden w-16 py-1 mt-2 origin-top-right bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                id="menuIdiomas">
+                <a href="../index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><img
+                    class="w-8 h-8" src="../assets/img/iconoBanderas/espana.png" alt="bandera de UK" /></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+      <div class="hidden sm:hidden" id="menu">
+        <div class="pt-2 pb-4 space-y-1">
+          <a href="#Inicio"
+            class="block py-2 pl-3 pr-4 text-base font-medium text-gray-800 border-l-4 focus:border-green-800 focus:bg-green-50 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700">Home</a>
+          <a href="#Resumen"
+            class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 focus:border-green-800 focus:bg-green-50">The
+            project</a>
+          <a href="#Socios"
+            class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 focus:border-green-800 focus:bg-green-50">Partners</a>
+          <a href="#Contacto"
+            class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 focus:border-green-800 focus:bg-green-50">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Inicio -->
+    <section id="Inicio"
+      class="relative flex items-center content-center justify-center h-auto pt-0 pb-0 md:pt-16 md:pb-32 lg:h-screen lg:min-h-full">
+      <div class="container items-center justify-center">
+        <div class="flex flex-wrap items-center">
+          <div class="w-full px-4 ml-auto mr-auto text-left lg:w-6/12">
+            <div class="pb-20 pr-12">
+              <h4 class="pt-20 font-semibold">
+                <span>CUATROVIENTOS</span> PRESENTS,
+              </h4>
+              <h1 class="text-6xl font-semibold text-black lef">Stop CO2</h1>
+              <p class="pb-5 mt-4 text-lg text-gray-600">
+                Stop CO2 | CF Train in VET, a project of sustainable
+                development, having as its main
+                <span class="font-bold"> goal</span> to become
+                <span class="font-bold">the first neutral emission vocational training college in
+                  Navarra.</span>
+              </p>
+              <a href="#Resumen"
+                class="px-6 py-3 text-sm font-bold text-white uppercase rounded shadow outline-none hover:shadow-lg">
+                Find out
+              </a>
+            </div>
+          </div>
+          <div class="px-4 ml-auto mr-auto text-center lg:max-w-lg lg:">
+            <img src="../assets/img/fotos.png" alt="imágenes de Cuatrovientos" class="object-fill" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="items-center h-auto fondoVerde" id="Resumen">
+      <div class="container justify-center px-4 py-16 mx-auto sm:py-20 sm:px-6 lg:px-8">
+        <div class="mx-2 text-left md:text-center">
+          <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+            <span class="block">STOP CO2</span>
+            <span class="block">CFTrain in VET</span>
+          </h2>
+          <p class="mt-4 text-lg leading-6 text-white" id="TimeLine">
+            An international project about
+            <span class="font-bold">sustainability and climate change</span>
+            based on the concept of
+            <span class="font-bold">measuring and reducing the Carbon Footprint.</span>
+            Which takes place in three phases:
+          </p>
+          <ul class="inline-block mx-2 mt-4 text-lg leading-6 text-left text-white list-disc">
+            <li>
+              A first one where
+              <span class="font-bold">we detected the necessity</span> to be
+              neutral in emissions.
+            </li>
+            <li>
+              The second one in which
+              <span class="font-bold">actions are proposed</span> and
+              activities are carried out to implement them.
+            </li>
+            <li>
+              And finally, the closing phase to
+              <span class="font-bold">review the results</span> achieved and
+              present them.
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col lg:flex-row mt-10 justify-between">
+          <div class="flex mr-0 lg:mr-11 flex-1 relative items-center group bg-white mb-4 rounded-lg shadow-lg">
+            <div class=" ">
+              <div class="px-6 py-5 rounded">
+                <h1 class="colorVerde text-center text-3xl">
+                  Environmental Statement
+                </h1>
+              </div>
+              <div
+                class="absolute rounded-lg top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly">
+                <a class="text-white transition transform translate-y-3 opacity-0 hover:scale-110 group-hover:translate-y-0 group-hover:opacity-100"
+                  target="_blank" href="./assets/pdf/1DM.pdf">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="w-12">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
 
-    <script src="../js/nav.js"></script>
-  </body>
+          <div class="flex mr-0 lg:mr-11 flex-1 relative items-center group bg-white mb-4 rounded-lg shadow-lg">
+            <div class=" ">
+              <div class="px-6 py-5 rounded">
+                <h1 class="colorVerde text-center text-3xl">
+                  Carbon Footprint report
+                </h1>
+              </div>
+              <div
+                class="absolute rounded-lg top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly">
+                <a class="text-white transition transform translate-y-3 opacity-0 hover:scale-110 group-hover:translate-y-0 group-hover:opacity-100"
+                  target="_blank" href="./assets/pdf/2Informe.pdf">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="w-12">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex mr-0 lg:mr-11 flex-1 relative items-center group bg-white mb-4 rounded-lg shadow-lg">
+            <div class=" ">
+              <div class="px-6 py-5 rounded">
+                <h1 class="colorVerde text-center text-3xl">
+                  Carbon Footprint Reduction Plan
+                </h1>
+              </div>
+              <div
+                class="absolute rounded-lg top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly">
+                <a class="text-white transition transform translate-y-3 opacity-0 hover:scale-110 group-hover:translate-y-0 group-hover:opacity-100"
+                  target="_blank" href="./assets/pdf/3Plan.pdf">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="w-12">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- timeline - fases del proyecto -->
+    <section class="container mx-auto">
+      <div class="flex flex-col grid-cols-9 mx-auto md:grid">
+        <!-- card left -->
+        <div class="flex flex-row-reverse md:contents">
+          <div class="col-start-1 col-end-5 p-4 my-4 ml-auto rounded-xl">
+            <div class="max-w-sm overflow-hidden rounded shadow-lg tarjeta">
+              <div class="p-3 rounded shadow-lg">
+                <div class="relative group">
+                  <img class="block w-full rounded" src="../assets/img/galeria/semanaCultural/foto(6).jpg"
+                    alt="fase de preparación" />
+                  <div
+                    class="absolute top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly">
+                    <a class="text-white transition transform translate-y-3 opacity-0 hover:scale-110 group-hover:translate-y-0 group-hover:opacity-100"
+                      href="./html/proyecto.html#SobreElProyecto">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-12">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-2xl">About the project</h3>
+                  <p class="text-gray-700">
+                    In this initial phase of the project, we identify and
+                    analyse the project, its structure, objectives...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
+            <div class="flex items-center justify-center w-6 h-full">
+              <div class="w-1 h-full pointer-events-none fondoVerde"></div>
+            </div>
+            <div class="absolute w-6 h-6 -mt-3 rounded-full shadow top-1/2 fondoVerde2"></div>
+          </div>
+        </div>
+        <!-- card right -->
+        <div class="flex md:contents">
+          <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
+            <div class="flex items-center justify-center w-6 h-full">
+              <div class="w-1 h-full pointer-events-none fondoVerde"></div>
+            </div>
+            <div class="absolute w-6 h-6 -mt-3 rounded-full shadow top-1/2 fondoVerde2"></div>
+          </div>
+          <div class="col-start-6 col-end-10 p-4 my-4 mr-auto rounded-xl">
+            <div class="max-w-sm overflow-hidden rounded shadow-lg tarjeta">
+              <div class="p-3 rounded shadow-lg">
+                <div class="relative group h-3/6">
+                  <img class="block w-full rounded" src="../assets/img/cuatrovientos1.jpg" alt="fase de preparación" />
+                  <div
+                    class="absolute top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly">
+                    <a class="text-white transition transform translate-y-3 opacity-0 hover:scale-110 group-hover:translate-y-0 group-hover:opacity-100"
+                      href="./html/proyecto.html#Actividades">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-12">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-2xl">Activities</h3>
+                  <p class="text-gray-700">
+                    In this phase we implement various project related
+                    activities to achieve our objectives.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card left -->
+        <div class="flex flex-row-reverse md:contents">
+          <div class="col-start-1 col-end-5 p-4 my-4 ml-auto rounded-xl">
+            <div class="max-w-sm overflow-hidden rounded shadow-lg tarjeta">
+              <div class="p-3 rounded shadow-lg">
+                <div class="relative group">
+                  <img class="block w-full rounded" src="../assets/img/procud.jpg" alt="fase de preparación" />
+                  <div
+                    class="absolute top-0 flex items-center w-full h-full transition bg-black bg-opacity-0 rounded group-hover:bg-opacity-60 group-hover:opacity-100 justify-evenly">
+                    <a class="text-white transition transform translate-y-3 opacity-0 hover:scale-110 group-hover:translate-y-0 group-hover:opacity-100"
+                      href="./html/proyecto.html#Galeria">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-12">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-2xl">Gallery of the activities</h3>
+                  <p class="text-gray-700">
+                    A number of different results have been achieved as a
+                    result of the project's activities.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
+            <div class="flex items-center justify-center w-6 h-full">
+              <div class="w-1 h-full pointer-events-none fondoVerde"></div>
+            </div>
+            <div class="absolute w-6 h-6 -mt-3 rounded-full shadow top-1/2 fondoVerde2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Socios -->
+    <section class="block fondoVerde" id="Socios">
+      <div class="container px-4 pt-24 pb-24 mx-auto">
+        <div class="flex flex-wrap justify-center text-center">
+          <div class="w-full px-4 lg:w-6/12">
+            <h2 class="text-4xl font-semibold text-white">Our Partners:</h2>
+            <p class="mt-4 mb-4 text-lg leading-relaxed text-white">
+              For the execution of this project we have the collaboration of
+              the following European organisations,
+            </p>
+          </div>
+        </div>
+        <div id="youtube" class="relative overflow-hidden">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ESNEuouXljQ"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen class="absolute inset-0 w-full h-full" title="Youtube video de los socios"></iframe>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg mt-11">
+          <div class="px-4 py-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+              <div class="flex justify-center col-span-1 md:col-span-2 lg:col-span-1">
+                <a href="https://www.htl-wolfsberg.at/htl/index.php/de/" target="_blank">
+                  <img id="tamañosocio" src="../assets/img/socios/Imagen2.png" alt="htl-wolfsberg logo" />
+                </a>
+              </div>
+              <div class="flex justify-center col-span-1 md:col-span-2 lg:col-span-1">
+                <a href="https://www.home.sandvik/en/" target="_blank" id="tamañosocio2">
+                  <img src="../assets/img/socios/sa.png" alt="logo de sandvik" />
+                </a>
+              </div>
+              <div class="flex justify-center col-span-1 md:col-span-2 lg:col-span-1">
+                <a href="http://www.tfobz.it/" target="_blank" id="tamañosocio3">
+                  <img src="../assets/img/socios/Imagen4.png" alt="logo de tfobz " />
+                </a>
+              </div>
+              <div class="flex justify-center col-span-1 md:col-span-3 lg:col-span-1">
+                <a href="https://www.cenifer.com" target="_blank">
+                  <img id="tamañosocio4" src="../assets/img/socios/Imagen5.png" alt="logo de cenifer " />
+                </a>
+              </div>
+              <div class="flex justify-center col-span-2 md:col-span-3 lg:col-span-1">
+                <a href="https://stenum.com/?lang=en" target="_blank">
+                  <img id="tamañosocio5" src="../assets/img/socios/Imagen6.jpg" alt="logo de stenum" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contacto -->
+    <section class="block py-24 pt-20" id="Contacto">
+      <div class="container px-4 mx-auto text-center">
+        <h2 class="text-4xl font-semibold">
+          Get in touch with Cuatrovientos
+        </h2>
+        <p class="mt-4 mb-4 text-lg leading-relaxed">
+          You can visit our social media to keep up to date or you can send us
+          an e-mail using the following contact form.
+        </p>
+        <div class="flex justify-between mb-12 md:justify-center">
+          <a href="https://www.instagram.com/cipcuatrovientos/?hl=es" class="colorVerde md:mr-11" target="_blank">
+            <i class="fab fa-instagram-square fa-7x"></i>
+          </a>
+          <a href="https://www.facebook.com/cipcuatrovientos/" class="colorVerde md:mr-11" target="_blank">
+            <i class="fab fa-facebook-square fa-7x"></i>
+          </a>
+          <a href="https://twitter.com/_cuatrovientos" class="colorVerde" target="_blank">
+            <i class="fab fa-twitter-square fa-7x"></i>
+          </a>
+        </div>
+        <div class="flex flex-wrap justify-center">
+          <form class="w-full max-w-lg p-16 text-left bg-gray-100 shadow-2xl rounded-2xl"
+            action="mailto:info@cuatrovientos.org">
+            <h2 class="text-3xl font-semibold pb-11">Get in touch with us</h2>
+            <div class="flex flex-wrap mb-6 -mx-3">
+              <div class="w-full px-3">
+                <label class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase" for="nick">
+                  Name
+                </label>
+                <input
+                  class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="nick" type="text" required />
+              </div>
+            </div>
+            <div class="flex flex-wrap mb-6 -mx-3">
+              <div class="w-full px-3">
+                <label class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase" for="email">
+                  E-mail
+                </label>
+                <input
+                  class="z-10 block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="email" type="email" required />
+              </div>
+            </div>
+            <div class="flex flex-wrap mb-6 -mx-3">
+              <div class="w-full px-3">
+                <label class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase" for="message">
+                  Message
+                </label>
+                <textarea
+                  class="block w-full h-48 px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none resize-none no-resize focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="message" required></textarea>
+              </div>
+            </div>
+            <div class="md:flex md:items-center">
+              <div class="md:w-1/3">
+                <button
+                  class="px-4 py-2 font-bold text-white bg-teal-400 rounded shadow hover:bg-teal-400 focus:shadow-outline focus:outline-none fondoVerde"
+                  type="submit" name="Enviar">
+                  Send
+                </button>
+              </div>
+              <div class="md:w-2/3"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="py-6 mt-24 bg-gray-200 text-coolGray-900">
+    <div class="container px-6 mx-auto space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50">
+      <div class="grid grid-cols-12">
+        <div class="pb-6 col-span-full md:pb-0 md:col-span-6">
+          <div class="flex justify-center md:justify-start">
+            <div class="flex items-center justify-center h-24 rounded-full w-55 bg-emerald-600">
+              <a href="http://www.cuatrovientos.org/">
+                <img src="../assets/img/cuatrovientos/logo.png" alt="logo de cuatrovientos" />
+              </a>
+            </div>
+          </div>
+          <!-- <p class="text-center md:text-left">Proyecto cofinanciado por:</p> -->
+          <div class="flex justify-center md:justify-start">
+            <div class="flex items-center w-1/2 rounded-full bg-emerald-600">
+              <a href="../html/erasmus.html">
+                <img src="../assets/img/cuatrovientos/en/1.png" alt="logo de erasmus plus" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center col-span-full md:col-start-10 md:text-left md:col-span-6">
+          <p class="pb-1 text-lg font-medium">Contact us:</p>
+          <ul>
+            <li>CENTRO INTEGRADO CUATROVIENTOS</li>
+            <li>Tel: (34) 948 12 41 29</li>
+            <li>info@cuatrovientos.org</li>
+            <li class="text-lg font-medium">Address:</li>
+            <li>31012, C. del Muelle, 3, 31012 Pamplona, Navarra</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid justify-center pt-6 lg:justify-between">
+        <div class="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
+          <p class="mb-1">Made by: Asier Elorza, Xabier Ferrero, Armando Rondon e Iker Larrea</p>
+          <span>©2021 CI Cuatrovientos</span>
+          <a href="https://www.cuatrovientos.org/politica-privacidad/">
+            <span>Politics of privacy</span>
+          </a>
+          <a href="https://www.cuatrovientos.org/politica-de-cookies/">
+            <span>Politics of cookies</span>
+          </a>
+        </div>
+        <div class="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
+          <a href="https://www.instagram.com/cipcuatrovientos/?hl=es"
+            class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-600 text-coolGray-50"
+            target="_blank">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/cipcuatrovientos/"
+            class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-600 text-coolGray-50"
+            target="_blank">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <a href="https://twitter.com/_cuatrovientos"
+            class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-600 text-coolGray-50"
+            target="_blank">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+
 </html>
