@@ -7,6 +7,7 @@ var btnF = document.getElementById("btnF");
 var btnA = document.getElementById("btnA");
 var btn22 = document.getElementById("btn22");
 var btnR = document.getElementById("btnR");
+var btnK = document.getElementById("btnK");
 // texto de información de cada galería
 var infoGym = document.getElementById("infoGymkana");
 var infoJornada = document.getElementById("infoJornada");
@@ -18,6 +19,7 @@ var documento = document.querySelectorAll("iframe");
 var info22Abril = document.getElementById("info22abril");
 var declaracion = document.getElementById("declaracion");
 var retos = document.getElementById("retosCiclos");
+var kimua = document.getElementById("infoKimua");
 btnG.addEventListener("click", function () {
   filtro("gynkana");
   window.location.href = "#infoGymkana";
@@ -45,6 +47,10 @@ btn22.addEventListener("click", function () {
 btnR.addEventListener("click", function () {
   filtro("reto");
   window.location.href = "#retosCiclos";
+});
+btnK.addEventListener("click", function () {
+  filtro("kimua");
+  window.location.href = "#infoKimua";
 });
 function filtro(c) {
   // limpia la galeria
@@ -101,6 +107,12 @@ function filtro(c) {
       retos.classList.contains("hidden")
         ? retos.classList.replace("hidden", "block")
         : retos.classList.replace("block", "hidden");
+      break;
+    case "kimua":
+      kimua.classList.contains("hidden")
+        ? kimua.classList.replace("hidden", "block")
+        : kimua.classList.replace("block", "hidden");
+      break;
     default:
       break;
   }
