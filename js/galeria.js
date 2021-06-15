@@ -5,6 +5,8 @@ var btnJ = document.getElementById("btnJornada");
 var btnS = document.getElementById("btnS");
 var btnF = document.getElementById("btnF");
 var btnA = document.getElementById("btnA");
+var btn22 = document.getElementById("btn22");
+var btnR = document.getElementById("btnR");
 // texto de información de cada galería
 var infoGym = document.getElementById("infoGymkana");
 var infoJornada = document.getElementById("infoJornada");
@@ -12,7 +14,10 @@ var infoSemana = document.getElementById("infoSemana");
 var infoRopa = document.getElementById("infoRopa");
 var infoArbol = document.getElementById("infoArbol");
 var menoriaJornada = document.getElementById("menoriaJornada");
-var documento = menoriaJornada.getElementsByTagName("iframe");
+var documento = document.querySelectorAll("iframe");
+var info22Abril = document.getElementById("info22abril");
+var declaracion = document.getElementById("declaracion");
+var retos = document.getElementById("retosCiclos");
 btnG.addEventListener("click", function () {
   filtro("gynkana");
   window.location.href = "#infoGymkana";
@@ -33,7 +38,14 @@ btnA.addEventListener("click", function () {
   filtro("arboles");
   window.location.href = "#infoArbol";
 });
-
+btn22.addEventListener("click", function () {
+  filtro("22abril");
+  window.location.href = "#info22abril";
+});
+btnR.addEventListener("click", function () {
+  filtro("reto");
+  window.location.href = "#retosCiclos";
+});
 function filtro(c) {
   // limpia la galeria
   for (let i = 0; i < imagenes.length; i++) {
@@ -54,9 +66,9 @@ function filtro(c) {
       menoriaJornada.classList.contains("hidden")
         ? menoriaJornada.classList.replace("hidden", "block")
         : menoriaJornada.classList.replace("block", "hidden");
-      documento.item(0).classList.contains("hidden")
-        ? documento.item(0).classList.replace("hidden", "block")
-        : documento.item(0).classList.replace("block", "hidden");
+      //documento.item(0).classList.contains("hidden")
+      //  ? documento.item(0).classList.replace("hidden", "block")
+      //  : documento.item(0).classList.replace("block", "hidden");
       break;
     case "semanaCultural":
       infoSemana.classList.contains("hidden")
@@ -74,6 +86,21 @@ function filtro(c) {
         ? infoArbol.classList.replace("hidden", "block")
         : infoArbol.classList.replace("block", "hidden");
       break;
+    case "22abril":
+      info22Abril.classList.contains("hidden")
+        ? info22Abril.classList.replace("hidden", "block")
+        : info22Abril.classList.replace("block", "hidden");
+      declaracion.classList.contains("hidden")
+        ? declaracion.classList.replace("hidden", "block")
+        : declaracion.classList.replace("block", "hidden");
+      //documento.item(1).classList.contains("hidden")
+      //  ? documento.item(1).classList.replace("hidden", "block")
+      //  : documento.item(1).classList.replace("block", "hidden");
+      break;
+    case "reto":
+      retos.classList.contains("hidden")
+        ? retos.classList.replace("hidden", "block")
+        : retos.classList.replace("block", "hidden");
     default:
       break;
   }
