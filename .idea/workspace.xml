@@ -20,6 +20,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../React/task-app" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -32,6 +33,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623186489132</updated>
       <workItem from="1623186492706" duration="43000" />
+      <workItem from="1624612057217" duration="4000" />
     </task>
     <servers />
   </component>
