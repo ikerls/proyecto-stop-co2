@@ -1,25 +1,29 @@
-var galeria = document.getElementById("Gal");
-var btnG = document.getElementById("btnG");
-var imagenes = document.querySelectorAll("#Gal .hidden");
-var btnJ = document.getElementById("btnJornada");
-var btnS = document.getElementById("btnS");
-var btnF = document.getElementById("btnF");
-var btnA = document.getElementById("btnA");
-var btn22 = document.getElementById("btn22");
-var btnR = document.getElementById("btnR");
-var btnK = document.getElementById("btnK");
+const galeria = document.getElementById("Gal");
+const btnG = document.getElementById("btnG");
+const imagenes = document.querySelectorAll("#Gal .hidden");
+const btnJ = document.getElementById("btnJornada");
+const btnS = document.getElementById("btnS");
+const btnF = document.getElementById("btnF");
+const btnA = document.getElementById("btnA");
+const btn22 = document.getElementById("btn22");
+const btnR = document.getElementById("btnR");
+const btnK = document.getElementById("btnK");
+const btnSM = document.getElementById("btnSM");
+const btnKoff = document.getElementById("btnKOFF");
 // texto de información de cada galería
-var infoGym = document.getElementById("infoGymkana");
-var infoJornada = document.getElementById("infoJornada");
-var infoSemana = document.getElementById("infoSemana");
-var infoRopa = document.getElementById("infoRopa");
-var infoArbol = document.getElementById("infoArbol");
-var menoriaJornada = document.getElementById("menoriaJornada");
-var documento = document.querySelectorAll("iframe");
-var info22Abril = document.getElementById("info22abril");
-var declaracion = document.getElementById("declaracion");
-var retos = document.getElementById("retosCiclos");
-var kimua = document.getElementById("infoKimua");
+const infoGym = document.getElementById("infoGymkana");
+const infoJornada = document.getElementById("infoJornada");
+const infoSemana = document.getElementById("infoSemana");
+const infoRopa = document.getElementById("infoRopa");
+const infoArbol = document.getElementById("infoArbol");
+const menoriaJornada = document.getElementById("menoriaJornada");
+const documento = document.querySelectorAll("iframe");
+const info22Abril = document.getElementById("info22abril");
+const declaracion = document.getElementById("declaracion");
+const retos = document.getElementById("retosCiclos");
+const kimua = document.getElementById("infoKimua");
+//const sm = document.getElementById("infoSM");
+const koff = document.getElementById("infoKOFF");
 btnG.addEventListener("click", function () {
   filtro("gynkana");
   window.location.href = "#infoGymkana";
@@ -51,6 +55,14 @@ btnR.addEventListener("click", function () {
 btnK.addEventListener("click", function () {
   filtro("kimua");
   window.location.href = "#infoKimua";
+});
+//btnSM.addEventListener("click", function () {
+//  filtro("infoSM");
+//  window.location.href = "#infoSM";
+//});
+btnKoff.addEventListener("click", function () {
+  filtro("infoKOFF");
+  window.location.href = "#infoKOFF";
 });
 function filtro(c) {
   // limpia la galeria
@@ -112,6 +124,16 @@ function filtro(c) {
       kimua.classList.contains("hidden")
         ? kimua.classList.replace("hidden", "block")
         : kimua.classList.replace("block", "hidden");
+      break;
+    case "infoSM":
+      sm.classList.contains("hidden")
+        ? sm.classList.replace("hidden", "block")
+        : sm.classList.replace("block", "hidden");
+      break;
+    case "infoKOFF":
+      koff.classList.contains("hidden")
+        ? koff.classList.replace("hidden", "block")
+        : koff.classList.replace("block", "hidden");
       break;
     default:
       break;
