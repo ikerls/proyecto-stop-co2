@@ -8,7 +8,7 @@ const btnA = document.getElementById("btnA");
 const btn22 = document.getElementById("btn22");
 const btnR = document.getElementById("btnR");
 const btnK = document.getElementById("btnK");
-const btnSM = document.getElementById("btnSM");
+const btnSP = document.getElementById("btnSP");
 const btnKoff = document.getElementById("btnKOFF");
 // texto de información de cada galería
 const infoGym = document.getElementById("infoGymkana");
@@ -22,7 +22,7 @@ const info22Abril = document.getElementById("info22abril");
 const declaracion = document.getElementById("declaracion");
 const retos = document.getElementById("retosCiclos");
 const kimua = document.getElementById("infoKimua");
-//const sm = document.getElementById("infoSM");
+const placasSolares = document.getElementById("infoSP");
 const koff = document.getElementById("infoKOFF");
 btnG.addEventListener("click", function () {
   filtro("gynkana");
@@ -56,10 +56,10 @@ btnK.addEventListener("click", function () {
   filtro("kimua");
   window.location.href = "#infoKimua";
 });
-//btnSM.addEventListener("click", function () {
-//  filtro("infoSM");
-//  window.location.href = "#infoSM";
-//});
+btnSP.addEventListener("click", function () {
+  filtro("infoSP");
+  window.location.href = "#infoSP";
+});
 btnKoff.addEventListener("click", function () {
   filtro("infoKOFF");
   window.location.href = "#infoKOFF";
@@ -129,6 +129,11 @@ function filtro(c) {
       sm.classList.contains("hidden")
         ? sm.classList.replace("hidden", "block")
         : sm.classList.replace("block", "hidden");
+      break;
+    case "infoSP":
+      placasSolares.classList.contains("hidden")
+        ? placasSolares.classList.replace("hidden", "block")
+        : placasSolares.classList.replace("block", "hidden");
       break;
     case "infoKOFF":
       koff.classList.contains("hidden")
